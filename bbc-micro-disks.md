@@ -1,0 +1,182 @@
+# Index
+
+* 1
+* 2
+* 3
+* 4
+* 12
+* 20
+* BASF
+* Facet
+...
+
+# 1
+
+!BOOT
+!MENU
+BASE
+Combat
+GRIDDAT
+GRIDMC
+GRIDRUN
+METEOR1
+METEOR2
+MazeKil
+PHAN2
+POLE
+Phantom
+PolPos2
+REP
+REPTON
+REPTON2
+REPTON3
+REPTON8
+SNOOK1
+SNOOK2
+SNOOKER
+SPOOKY
+SPOOKY3
+Zalaga1
+Zalaga2
+
+# 2
+
+[UNREADABLE]
+
+# 3
+
+* !BOOT
+* Aviator
+* Avia2
+* SPITFIR
+* Screen
+
+# 4
+
+!BOOT
+BEETHOV
+BELLS - Bell ringing patetrns?
+COLMIX
+CURVFIT - Find function to fit a series of points (cubic spline?)
+DESIGN
+DETER - Matrix determinants?
+DRAW
+F
+FACFILE - Data?
+FILE3
+FILM
+FOURIER - Fourier transform?
+GIGFILE - Data?
+GRAPH
+KOCH - Koch curves
+PATT1
+PATT2
+PATT3
+PATT4
+PRIME - Prime numbers?
+PRIPATT
+QUCKSRT - Implementation of the Quicksort algorithm
+RNDWALK
+SIMULT - Simultaneous equations?
+STICK - Lissajous figures?
+TRICALC
+TURTLE
+WORDF - Data?
+
+# 12 - MY PROGRAMS
+
+FIRECOR
+FILEINP
+FRVB - French verbs?
+FRVBAK
+WORKING
+
+*.AMENGSP
+*.AMENGTR
+*.AMENGVO
+*.CH/SURF
+*.COOKTEX
+*.EATDOOR
+*.GONCLSS
+*.IR/REG
+*.JOBWORK
+*.LSILENT
+*.MKSTAT
+*.MOODMOI (?)
+*.MUCHMNY
+*.SEETEN2
+*.SMEDIAL
+
+# 20
+
+!BOOT
+CONVERT
+FILECOR
+LEXIS
+LEXLONG
+Vocab
+WORKING - Development version of Lexis?
+
+C.'r'PRON
+C.CH/K
+C.CONS/j/
+C.FORTLEN
+C.INIT-TH
+C.J/G
+C.MED-TH
+C.SEFINAL
+D.A/OUGH
+D.ART/CAT
+D.GO/NEW
+D.GO/SAW
+D.LONGSHT
+D.NOT/CUT
+D.PUT/BUT
+D.PUT/TOO
+D.SEE/TEN
+P.CONSNNT
+P.GRAMMAR
+P.VOCAB
+P.VOWELS
+
+## Notes
+
+* C. - consonants
+* D. - difference?
+* P. - programs?
+
+# (BASF disk) - MANDELBROT
+
+!BOOT
+CHOICE
+CONTROL
+GO
+LOGO
+MCODE
+PART1
+PART2
+REVERT
+SCORE
+TEST1
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+
+# Facet
+
+[UNREADABLE]
