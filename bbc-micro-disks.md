@@ -1,16 +1,6 @@
-# Index
-
-* 1
-* 2
-* 3
-* 4
-* 12
-* 20
-* BASF
-* Facet
-...
-
 # 1
+
+## 1: Drive 0 (Same as 14: Drive 0)
 
 !BOOT
 !MENU
@@ -39,11 +29,92 @@ SPOOKY3
 Zalaga1
 Zalaga2
 
-# 2
+## 1: Drive 2 (Same as 14: Drive 2)
 
-[UNREADABLE]
+ARENA
+COMM2B
+COMM2C
+JETSET
+JSW2
+Karate
+MAN
+MANIC
+MINER
+QMANB2
+QMANBRO
+REPTON1
+REPTON2
+REPTON3
+REPTON4
+REPTONA
+REPTONB
+RepMain
+S-HUNT2
+SPYHUNT
+TERPIC
+TERROR1
+TERROR2
+TERROR3
+TERROR4
+Terror
+
+# 2 - Damaged disk, same content as #8
+
+## Drive 0
+
+!BOOT
+!MENU
+ARCADS2
+Blaster
+C-EGG
+DENIS1
+DODGE
+
+Dennis2
+FASTPAC
+FRAK2
+GORILLA
+HOPPER
+HOPPER1
+HUNCH1
+HUNCHBA
+JETPAC
+KILLA
+PAIN
+PAINTER
+PURPLE
+RAID
+ROCKET
+
+## Drive 2
+
+!M
+BANDIT
+CUBERT
+CYLON
+DARTS
+DEMOLAT
+FRUIT1
+FRUIT2
+FRUIT3
+Labyrin
+MAZE
+MAZE2
+MAZE3
+MONO
+MONOPOL
+QBERT
+QC
+VOLCANO
+WIXADO2
+WIZADOR
+WIZARD
+
+A.CYLON
 
 # 3
+
+## Drive 0
 
 * !BOOT
 * Aviator
@@ -51,30 +122,39 @@ Zalaga2
 * SPITFIR
 * Screen
 
+## Drive 2
+
+[empty]
+
 # 4
 
+## 4: Drive 0
+
 !BOOT
-BEETHOV
-BELLS - Bell ringing patetrns?
+BEETHOV - Plays Ode to Joy through the speaker (Listing photo)
+BELLS - Bell ringing patterns?
 COLMIX
 CURVFIT - Find function to fit a series of points (cubic spline?)
-DESIGN
-DETER - Matrix determinants?
-DRAW
-F
+DESIGN - draws an 8x8 grid, ADWX move a bar cursor around
+DETER - Matrix determinants (Listing photo)
+DRAW - Draw on screen using ADWX keys (Listing photo, run screenshot)
+F - another copy of 'FILM'
 FACFILE - Data?
 FILE3
-FILM
-FOURIER - Fourier transform?
-GIGFILE - Data?
-GRAPH
+FILM - Fill 2D shapes with a colour. Code in assembler.
+  (Listing photo, Screenshot)
+FOURIER - Fourier transform. Syntax error BAD DIM (Listing photo)
+GIGFILE - Manage a list of gigs seen? Data file should be GIGS
+GRAPH - User inputs a user function and x minimum and maximum and draw a graph
+  (Listing photo)
 KOCH - Koch curves
-PATT1
+PATT1 - lissajous triangles
 PATT2
 PATT3
 PATT4
 PRIME - Prime numbers?
-PRIPATT
+PRIPATT - Print prime numbers as bit blocks to look for patterns
+  (Listing photo, Screenshot)
 QUCKSRT - Implementation of the Quicksort algorithm
 RNDWALK
 SIMULT - Simultaneous equations?
@@ -83,13 +163,144 @@ TRICALC
 TURTLE
 WORDF - Data?
 
+## 4: Drive 2
+
+[the same as 4: Drive 0??]
+
+# 6
+
+## Drive 0
+
+LEXBAK
+LEXIS
+
+## Drive 2
+
+[empty]
+
+# 7
+
+## Drive 0
+
+!BOOT
+BOOKS
+PRIN
+README
+
+## Drive 2 (Title: 7B)
+
+BOOKFIL
+MULTPRC
+NAMEORD
+PRINT
+RUFORD
+VALTOT
+
+# 8
+
+## Drive 0
+
+!BOOT
+!MENU
+ARCADS2
+Blaster
+C-EGG
+DENIS1
+DODGE
+Dennis2
+FASTPAC
+FRAK2
+GORILLA
+HOPPER
+HOPPER1
+HUNCH1
+HUNCHBA
+JETPAC
+KILLA
+PAIN
+PAINTER
+PURPLE
+RAID
+ROCKET
+
+## 8, Drive 2
+
+!M
+BANDIT
+CUBERT
+CYLON
+DARTS
+DEMOLAT
+FRUIT1
+FRUIT2
+FRUIT3
+Labyrin
+MAZE
+MAZE2
+MAZE3
+MONO
+MONOPOL
+QBERT
+QC
+VOLCANO
+WIXADO2
+WIZADOR
+WIZARD
+
+A.CYLON
+
+# 9 - Title: PASCAL, on label: "CHESS PASCAL"
+
+## Drive 0
+
+!BOOT
+C32/1
+C32/2
+CHESS
+MENU
+PASCAL
+ROMPASC
+X
+
+## Drive 2
+
+CNTNUM2
+CONTNUM
+DETER
+NIM
+PASCAL
+PATTERN
+PERSIAN
+ROMPASC
+SORT
+
+O.PATTERN
+O.deter
+P.ERRMSG
+P.PASCAL1
+P.PASCAL2
+P.PASCAL3
+P.PASCAL4
+P.PASCAL5
+P.RTIME1
+P.RTIME2
+P.RTIME3
+
+## Notes
+
+Side 2 has >=2 of my programs in Pascal, plus the compiled (Object) code
+
 # 12 - MY PROGRAMS
 
-FIRECOR
-FILEINP
+## Drive 0
+
+FILECOR
+FILEINP - (Listing photo)
 FRVB - French verbs?
 FRVBAK
-WORKING
+ITVBS - Italian verbs?
+RODCOLS - Coloured Lissajous figures (Listing photo, screenshot)
+WORKING (Size: 998)
 
 *.AMENGSP
 *.AMENGTR
@@ -102,20 +313,222 @@ WORKING
 *.JOBWORK
 *.LSILENT
 *.MKSTAT
-*.MOODMOI (?)
+*.MOODNOI (?)
 *.MUCHMNY
 *.SEETEN2
 *.SMEDIAL
 
-# 20
+## Drive 2
+
+8QUEENS - (Listing photo, Screenshot)
+ALPHA
+ALPHATY
+C
+CLONE
+DESIGN
+DESIGNP
+F80
+FRCTION
+KEYB
+LEXINP
+LEXIS
+LOOK
+MATMULT
+MEMLOOK
+MSEARCH
+READIDS
+SIMULT
+WORDF
+WORKING
+
+D.DCBELL
+D.TYPE
+M.DETER
+M.GRAPH
+M.SIMULT
+
+# 12(?) - Cumana
+
+## Drive 0
+
+BVERIFY
+FORM40
+FORM80
+
+## Drive 2
+
+BOOKFIL
+DETER
+FILE
+FILL
+FILMACH
+FORMAT
+GRAPH
+KOCH
+SIMULT
+
+# 14 - GAMES
+
+## 14: Drive 0 (Same as 1: Drive 0)
+
+!BOOT
+!MENU
+BASE
+Combat
+GRIDDAT
+GRIDMC
+GRIDRUN
+METEOR1
+METEOR2
+MazeKil
+PHAN2
+POLE
+Ohantom
+PolPos2
+REP
+REPTON
+REPTON2
+REPTON3
+REPTONB
+SNOOK1
+SNOOK2
+SNOOKER
+SPOOKY
+SPOOKY3
+Zalaga1
+Zalaga2
+
+## 14: Drive 2 (Same as 1: Drive 2)
+
+ARENA
+COMM2B
+COMM2C
+JETSET
+JSW2
+Karate
+MAN
+MANIC
+MINER
+QMANB2
+QMANBRO
+REPTON1
+REPTON2
+REPTON3
+REPTON4
+REPTONA
+REPTONB
+RepMain
+S-HUNT2
+SPYHUNT
+TERPIC
+TERROR1
+TERROR2
+TERROR3
+TERROR4
+Terror
+
+# 15 - Title: LANGUAGES
+
+## Drive 0
+
+!BOOT
+!MENU
+AMXPag
+BASIC
+BASIC2
+DFS
+FORTH
+GRAPHIC
+Pagemak
+Replay
+U-TOOLS
+VIEW
+ViewShe
+WORDWIS
+
+## Drive 2
+
+CL2DISC
+CL4DISP
+CLONE3
+CLONE4
+D-DOC
+DFS,NET
+E8271
+ReadIDs
+XAMINE
+
+# 16 - Progamming Utilities
+
+## Drive 0
+
+!BOOT
+BASEDT
+DIS
+DISCTAP
+DISPRIN
+L
+QUTEDIT
+RAM
+READIDS
+SCANNER
+SCTEDIT
+
+## Drive 2
+
+L
+LAB000
+Labyrin
+
+# 17 - BOOKFILE
+
+## Drive 0
+
+!BOOT
+BOOKS
+PRIN
+README
+
+## Drive 2
+
+BOOKFIL
+JUNK
+MULTPRC
+NAMEORD
+PRINT
+RUFORD
+VALTOT
+
+# 19 - TAPES LIST
+
+## Drive 0
+
+!BOOT
+AUTCREA
+AUTUMNB
+CLEAR
+M
+SAMPLE
+SUMCENT
+TAPES
+TAPESBK
+X
+
+## Drive 2
+
+[unreadbale - disk may be single-sided]
+
+# 20 - LEXIS development
+
+## Drive 0
 
 !BOOT
 CONVERT
 FILECOR
-LEXIS
-LEXLONG
-Vocab
-WORKING - Development version of Lexis?
+LEXIS - Initial menu (Screenshot)
+LEXLONG - Jumps stright in to Grammar (?)
+Vocab - data file
+WORKING - Development version of Lexis (Size: A86)
 
 C.'r'PRON
 C.CH/K
@@ -139,6 +552,34 @@ P.GRAMMAR
 P.VOCAB
 P.VOWELS
 
+## Drive 2
+
+C
+
+G.GER/INF
+G.IRREGPL
+G.MAKE/DO
+G.MOD/AUX
+G.PAST/PP
+G.PLCTIME
+G.PREPAST
+G.PRONPOS
+G.THE/0
+G.WEAKFMS
+V.AIR/STN
+V.BOD/LIQ
+V.BODFACE
+V.BTHTOOL
+V.CAR/HSE
+V.CLO/RM
+V.FE/MALE
+V.HANDMTH
+V.KIT/BED
+V.MEATVEG
+V.NATIONS
+V.PC/CONT
+V.YNG/OLD
+
 ## Notes
 
 * C. - consonants
@@ -146,6 +587,8 @@ P.VOWELS
 * P. - programs?
 
 # (BASF disk) - MANDELBROT
+
+## Drive 0
 
 !BOOT
 CHOICE
@@ -177,6 +620,40 @@ TEST7
 TEST8
 TEST9
 
+## Drive 2
+
+MANDEL1
+MANDEL2
+MANDEL3
+MANDISP
+MN32COL
+TURB
+X
+
+S.PIC1a
+S.PIC1b
+S.PIC1c
+S.PIC1d
+S.PIC2a
+S.PIC2b
+S.PIC2c
+S.PIC2d
+S.PIC4
+
 # Facet
 
-[UNREADABLE]
+## Drive 0
+
+DUMMAKE
+DUMMY
+DUMREAD
+FACET - Keyword-based book indexing program
+
+## Drive 2
+
+ALLSORT
+CLASS1
+CLASS2
+CORRECT
+LIST
+SORT
