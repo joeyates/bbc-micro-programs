@@ -1,0 +1,10 @@
+   10 N%=0
+   20 REPEAT
+   30 N%=N%+1
+   40 IF N%<4 THEN P%=(N%>1) ELSE IF NOT -(N% MOD 2) THEN P%=FALSE:GOTO 90
+   50 R%=INT(SQR(N%)+.5)
+   60 D%=3
+   70 REPEAT:D%=D%+2:UNTIL D%>R% OR N% MOD D%=0 
+   80 P%=(D%>R%)
+   90 IF P% THEN PRINT N%
+  100 UNTIL FALSE

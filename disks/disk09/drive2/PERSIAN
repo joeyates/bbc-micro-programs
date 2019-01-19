@@ -1,0 +1,32 @@
+  procedure PERSIAN; 
+     const D=4; 
+     var J1,J2,K,K1,I,I1:integer; 
+         CH:char; 
+     begin 
+       MODE(0);
+       WRITELN(OSVDU,29,640,512);
+       J1:=0; 
+       for K1 :=3 downto 0 do 
+       begin 
+         K:=K1*40+380; 
+         repeat 
+           J2:=1+RANDOM MOD 3 
+         until J2 <> J1; 
+         J1:=J2; 
+         GCOL(3,1);
+         for I1 := -K DIV D to K DIV D do 
+         begin 
+           I:=I1*D; 
+           MOVE(K,I); 
+           DRAW(-K,-I); 
+           MOVE(I,-K); 
+           DRAW(-I,K); 
+         end 
+       end 
+     end; (*of procedure PERSIAN*) 
+ 
+   begin 
+     repeat 
+       PERSIAN 
+     until FALSE 
+   end. 

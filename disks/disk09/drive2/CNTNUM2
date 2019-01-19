@@ -1,0 +1,28 @@
+ PROGRAM NUM;
+ LABEL 1,2;
+ VAR X: REAL;
+     N: INTEGER;
+ BEGIN
+   READ(X);
+   N:=0;
+ 1:IF X<1 THEN GOTO 2;
+   X:=X/10;
+   N:=N+1;
+ GOTO 1;
+ 2:WRITE(N);
+ END.
+>*TYPE CONTNUM
+ PROGRAM NUM1;
+ VAR X: REAL;
+     N: INTEGER;
+ BEGIN
+ READ (X);
+ GOTO 60;
+ N:=0;
+ WHILE X>=1 DO
+ BEGIN
+ X:=X/10;
+ N:=N+1;
+ END;
+ WRITE (N);
+ END.

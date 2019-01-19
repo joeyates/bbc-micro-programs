@@ -1,0 +1,157 @@
+ PROGRAM nim (INPUT, OUTPUT);
+
+   CONST  nrows = 25;
+          delay = 1000;
+          coin = 168;
+
+   VAR    pile : ARRAY [1..3] OF                   0..nrows;
+          move : RECORD
+           ntaken,pileno:INTEGER;
+          END;
+          i : INTEGER;
+          key : CHAR;
+
+   FUNCTION gameover : BOOLEAN;
+     BEGIN
+       gameover := (pile [1] +                 pile [2] + pile [3] = 0)
+     END;
+
+   FUNCTION asc(n: INTEGER): CHAR;
+     BEGIN
+       asc := chr(n+ord ('0'))
+     END;
+
+   PROCEDURE display;
+     VAR  p, row, col, firstcol :
+     INTEGER;
+     BEGIN
+       page;
+       FOR p := 1 TO 3 DO
+         BEGIN
+           firstcol := p*10;
+           FOR row := 0 TO nrows-1                 DO
+             IF pile [p] >= nrows-                   row THEN
+               FOR col := firstcol+3                   TO firstcol+5 DO
+                 vdu(row, col,                           chr(coin));
+           IF pile [p] >= 10 THEN
+             vdu(nrows-1,
+             firstcol,asc(pile[p]
+             div 10));
+           vdu (nrows-1, firstcol
+           +1,asc(pile[p] mod
+           10));
+         END;
+     END; (* display *)
+
+   PROCEDURE signon;
+    BEGIN
+      page;
+      writeln ('      ***  NIM  ***');
+      writeln;
+      writeln;
+      writeln ('  I will set up three piles of coins.');
+      writeln ('To move, take any number of coins away');
+      writeln ('from any pile.  The player who clears');
+      writeln ('the screen wins. ');
+      writeln;
+      write ('  Now hit any key to start : ');
+      WHILE getkey = chr (0) DO;
+   END; (* signon *)
+
+   PROCEDURE hismove;
+     VAR  ok : BOOLEAN;
+     BEGIN
+       writeln ('Now enter your move :');
+       WITH move DO
+       REPEAT
+         writeln;
+         write ('Pile (1 to 3) ? ');
+         read (pileno);
+         ok := pileno in [1..3];
+         IF ok THEN
+           BEGIN
+             write ('Number to take away ? ');
+             read (ntaken);
+             ok := ntaken in [1..pile [pileno]];
+            END
+         ELSE writeln ('What ??');
+       UNTIL ok;
+       WITH move DO
+       pile [pileno]
+       := pile [pileno]-ntaken;
+     END;  (* of hismove *)
+
+   PROCEDURE mymove;
+     VAR  bit : ARRAY [1..3, 1..4]                      OF BOOLEAN;
+          parity : ARRAY [1..4]                            OF BOOLEAN;
+          firstbit, x, i, j :                                    INTEGER;
+     BEGIN
+       FOR i := 1 TO 3 DO
+         BEGIN
+           x := pile [i];
+           FOR j := 4 DOWNTO 1 DO
+             BEGIN
+               bit[i,j]:=odd(x);
+               x := x div 2;
+             END;
+         END;
+       FOR i := 1 TO 4 DO
+         parity[i]:= bit [1,i] <>                (bit[2,i] <> bit[3,i]);
+       move.pileno := 1;
+       move.ntaken := 0;
+       WITH move DO
+       IF NOT (parity [1] or                           parity [2] or                           parity [3] or                           parity [4])
+       THEN
+         BEGIN
+           WHILE pile [pileno]                           = 0                               DO
+               pileno :=                               pileno+1;
+           IF pile [pileno]                           = 1                                  THEN                                      ntaken :=1
+           ELSE                                      ntaken := random                        mod (pile                               [pileno]-1)+1;
+         END
+       ELSE
+         BEGIN
+           firstbit := 1;
+           WHILE NOT parity                                  [firstbit]                    DO
+             firstbit :=                             firstbit + 1;
+           WHILE NOT bit                                     [pileno,                                firstbit]                     DO pileno :=                               pileno + 1;
+           FOR i := firstbit                       TO       4                              DO
+             BEGIN
+               x := 1;
+               FOR j := 3                              DOWNTO   i                              DO                                        x := x*2;
+               IF parity [i]                           THEN                                      IF bit[pileno,                                 i]                               THEN                                      ntaken :=
+                   ntaken + x
+                 ELSE ntaken:=                                ntaken -                                  x;
+             END;
+         END;
+       WITH move DO
+       pile [pileno] :=                        pile [pileno] -                         ntaken;
+     END; (*of mymove *)
+
+   BEGIN
+     signon;
+     REPEAT
+       FOR i := 1 TO 3                         DO                                        pile [i] := random                                  mod 10 + 6;
+       display;
+       writeln;
+       REPEAT
+         hismove;
+         IF gameover THEN                          writeln('Congratulations...',
+                   ' you win !')
+         ELSE                                      BEGIN
+             display;
+             mymove;
+             FOR i := 1 TO delay                     DO; (*nothing*)
+             display;
+             writeln;
+             writeln ('My move was',                    move.ntaken : 3,                        ' from pile',                           move.pileno:2);
+              IF gameover                             THEN                                      writeln ('*** I win.');
+              writeln;
+           END;
+        UNTIL gameover;
+        write ('Another game ? ');
+        WHILE INPUT^ = ' '                      DO get (INPUT);
+        read (key);
+        WHILE NOT eoln                          DO get (INPUT);
+       UNTIL (key= 'n') OR (key='n');
+     page;
+   END.

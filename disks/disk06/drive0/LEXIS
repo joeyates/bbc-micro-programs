@@ -1,4 +1,3 @@
->LIST
    10MODE1:PROCsetup
    20PROCshuffle
    80 IF FNcheckline THEN PROCmoveline:GOTO 80
@@ -72,4 +71,3 @@
   940E=W(A,B):W(A,B)=W(C,D):W(C,D)=E
   950E$=W$(A,B):W$(A,B)=W$(C,D):W$(C,D)=E$
   960NEXT K:ENDPROC
->*SPOOL

@@ -1,0 +1,46 @@
+ (*   Determinants of        *)
+ (*  n-dimensional arrays    *)
+ program determinant;
+ type m=1..9;
+ var I,J,N,X : integer;
+           B : array[m,m,m] of integer;
+           D : array[m] of integer;
+ function determinant (N:integer):integer;
+ var I,J,K,L,S : integer;
+ begin
+ D[N]:=0;
+ IF N=1 THEN determinant:=B[1,1,1]
+ else begin
+       for I:=1 to N do
+       begin
+         K:=0;
+         for J:=1 to N-1 do
+         begin
+          IF I=J THEN K:=1;
+          for L:=2 TO N do B[N-1,J,L-1]:=B[N,J+K,L]
+         end;
+         S:=determinant(N-1);
+         D[N]:=D[N]+((I mod 2)*2-1)*B[N,I,1]*S
+       end;
+      determinant:=D[N];
+      end;
+ end;
+ 
+ begin
+  repeat
+  begin
+   write('No. of Dimensions :');
+   readln(N);page;
+   FOR I:=1 TO N do
+   begin
+    FOR J:=1 TO N do
+    begin
+     write('(',I,',',J,')');
+     readln(B[N,I,J])
+    end
+   end;
+  X:=determinant(N);
+  writeln('Determinant is',X);
+  end;
+  until false;
+ end.

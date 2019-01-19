@@ -1,0 +1,164 @@
+    1HS%=2:BS%=1:WS%=2
+   10MODE7
+   20PROCinit
+   30F$=FNmenu
+   50PROCinput(F$)
+   55PROCvars
+   60PROCshuffle
+   70PROCpage
+  110TIME=0
+  120 
+  130IFFNcheck PROCmove:GOTO130
+  140IFNOT H% GOTO160
+  150PROCdisplay
+  160PROCbullet
+  170IF W%<1 GOTO270
+  180IF Y%<>15 GOTO250
+  190IFNOTFNhit GOTO230
+  200H%=TRUE:PROCfill:S%=S%+HS%:W%=W%-1
+  230PRINTTAB(X%,Y%);" ";:Y%=24
+  250GOTO130
+  260 
+  270T%=TIME/100
+  273PROCbig(0,2,130,131,"Time  :"+STR$(T%)+" seconds")
+  275PROCbig(0,4,131,129,"Your Time :"+STR$(T%-S%))
+  280Q%=FNchoice
+  300GOTO30
+  310 
+  320DEFFNcheck
+  330R%=TRUE:I%=0
+  340REPEATIF W%(I%,1)<>O% R%=FALSE
+  345I%=I%+1
+  360UNTIL I%=4 OR R%=FALSE
+  370=R%
+  380 
+  390DEFPROCmove
+  400FOR I%=0TO3
+  410E$=W$(I%,1):E%=W%(I%,1)
+  420FOR J%=1TO7-M%
+  430W%(I%,J%)=W%(I%,J%+1)
+  440W$(I%,J%)=W$(I%,J%+1)
+  450NEXT J%
+  460W$(I%,8-M%)=E$:W%(I%,8-M%)=E%
+  470NEXT I%
+  480M%=M%+1:W%=W%-4
+  490ENDPROC
+  500 
+  510DEFPROCdisplay
+  520CLS
+  525PROCbig(0,0,129,131,"LEXIS :"+T$)
+  527PROCbig(0,2,129,131,"Points:"+STR$(S%))
+  530FOR I%=0TO3:FOR J%=1TO8
+  540PRINTTAB((I%)*10,15-J%);W$(I%,J%)
+  550NEXT J%,I%:H%=FALSE
+  555ENDPROC
+  560 
+  561DEFPROCbullet
+  562PRINTTAB(X%,Y%);" ";
+  563IF Y%>0 AND Y%<24 Y%=Y%-1
+  564IFINKEY(-65)AND X%>0 X%=X%-1
+  565IFINKEY(-2)AND X%<38 X%=X%+1
+  566IFINKEY(-74)ANDY%=24 Y%=23:S%=S%-BS%
+  568PRINTTAB(X%,Y%);"i";
+  569ENDPROC
+  570 
+  580DEFFNhit
+  590R%=FALSE:C%=INT(X%/10)
+  610IFX%-C%*10>=LEN(W$(C%,1)) GOTO 650
+  620IF W$(C%,1)="" GOTO 650
+  630IF W%(C%,1)=O% SOUND1,-12,20,3:S%=S%-WS%:GOTO650
+  640R%=TRUE:SOUND0,-12,30,8
+  650=R%
+  660 
+  670DEFPROCfill
+  680A%=(W%+3)MOD4:B%=(W%+3)DIV4
+  690C%=INT(X%/10)
+  700W$(C%,1)=W$(A%,B%)
+  710W%(C%,1)=W%(A%,B%)
+  720W$(A%,B%)=""
+  730ENDPROC
+  930 
+  940DEFFNmenu
+  950CLS:RESTORE:READ T$,Q%,Q$
+  955PROCbig(0,0,129,131,"LEXIS :"+T$)
+  960PROCbig(0,2,131,130,"Press the LETTER of the exercise")
+  980FOR I%=1TO Q%
+  990READ F$(I%),G$
+ 1000PRINT;CHR$(64+I%);")";TAB(3);G$
+ 1010NEXT I%
+ 1011R%=FNchoice
+ 1013IF R%=1 CHAIN"LEXIS"
+ 1015IF R%<>3 GOTO 1019
+ 1017*FX 210,1
+ 1019IF R%<>4 GOTO 1024
+ 1020*FX 210,0
+ 1024R%=(R% AND &5F)-64
+ 1025IF R%<1 OR R%>Q% GOTO 1011
+ 1030F$=Q$+F$(R%)
+ 1040=F$
+ 1050 
+ 1060DEFPROCinput(F$)
+ 1070Z%=OPENUP F$
+ 1075FORK%=0 TO 1
+ 1080INPUT#Z%,A$(K%+1)
+ 1090FOR I%=0TO3:FOR J%=1TO4
+ 1100INPUT#Z%,W$(I%,J%+4*K%),W%(I%,J%+4*K%)
+ 1110NEXT J%,I%,K%
+ 1120CLOSE#0
+ 1121ENDPROC
+ 1122 
+ 1125DEF PROCpage:CLS
+ 1140PROCbig(0,0,129,131,"LEXIS :"+T$)
+ 1150PROCbig(0,5,131,130,"Shoot")
+ 1153PROCbig(0,7,131,130,N$)
+ 1156PROCbig(0,10,131,130,"Don't shoot")
+ 1159PROCbig(0,12,131,130,O$)
+ 1162PROCbig(0,20,131,130,"  Press FIRE to start the game")
+ 1165R%=FNchoice
+ 1200ENDPROC
+ 1210 
+ 1220DEFPROCinit
+ 1230DIM F$(25),A$(2),W$(3,8),W%(3,8)
+ 1235*KEY 0 |A
+ 1240*KEY 1 |B
+ 1250*KEY 2 |C
+ 1260*KEY 3 |D
+ 1270ENDPROC
+ 1280 
+ 1290DEFPROCvars:W%=32:X%=18:Y%=24
+ 1300M%=0:H%=TRUE:S%=0
+ 1310ENDPROC
+ 1320 
+ 1330DEF FNchoice
+ 1340*FX 15,1
+ 1350REPEATR%=GET:UNTILR%<>0
+ 1420=R%
+ 1421DEF PROCbig(A%,B%,C%,D%,B$)
+ 1422FOR E%=0 TO 1:PRINTTAB(A%,B%+E%);
+ 1423VDU C%,157,D%,141:PRINTB$
+ 1424NEXT E%
+ 1425ENDPROC
+ 1500 
+ 1510DEF PROCshuffle
+ 1520FOR K%=1TO20
+ 1530A%=RND(4)-1:B%=RND(8)
+ 1540C%=RND(4)-1:D%=RND(8)
+ 1550E%=W%(A%,B%):W%(A%,B%)=W%(C%,D%)
+ 1560E$=W$(A%,B%):W$(A%,B%)=W$(C%,D%)
+ 1570W%(C%,D%)=E%:W$(C%,D%)=E$
+ 1580NEXT K%
+ 1590N%=RND(2):O%=3-N%
+ 1600N$=A$(N%):O$=A$(O%)
+ 1610ENDPROC
+ 1620 
+ 2000DATA Grammar,10,:2.G.
+ 2010DATA PREPAST,Present tenses and Past tenses
+ 2020 DATA PAST/PP,Past Tenses and Past Participles
+ 2030DATA GER/INF,Verbs with Gerund and Infinitive
+ 2040DATA IRREGPL,Irregular plurals
+ 2050DATA WEAKFMS,Weak Forms
+ 2060 DATA MAKE/DO,Make words and Do words
+ 2070 DATA PRONPOS,Pronouns and Possessive Pronouns
+ 2080 DATA MOD/AUX,Modal verbs and Auxilliary verbs
+ 2090DATA THE/0,Articles : 'The' or no article
+ 2100DATA PLCTIME,Prepositions of Place and Time

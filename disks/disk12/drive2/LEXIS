@@ -1,0 +1,117 @@
+   10MODE1
+   20PROCsetup
+   30PROCfile
+   40PROCshuffle
+   50T%=TIME
+   60 
+   70IF FNcheck THEN PROCmove:GOTO 70
+   80IF NOT H% THEN 100
+   90PROCdisplay
+  100PROCbullet
+  110IF W%<1 THEN 200
+  120IF Y%<>20 THEN 190
+  130IF NOT FNhit THEN 170
+  140H%=TRUE
+  150PROCfill
+  160W%=W%-1
+  170PRINTTAB(X%,Y%);" ";
+  180Y%=31
+  190GOTO 70
+  200*FX 15,1
+  210PRINTTAB(0,26);"You did it!!!"'"Score :";INT((TIME-T%)/100)+S%+2*U%
+  220REPEAT Q%=GET:UNTIL Q%<>0 
+  230RUN
+  240 
+  250DEF FNcheck
+  260R%=TRUE:I%=0
+  270REPEAT I%=I%+1
+  280IF W%(I%,1)=N% THEN R%=FALSE
+  290UNTIL I%=4 OR R%=FALSE
+  300=R%
+  310 
+  320DEF PROCmove
+  330FOR I%=1 TO 4
+  340E$=W$(I%,1):E%=W%(I%,1)
+  350FOR J%=1 TO 7-M%
+  360W%(I%,J%)=W%(I%,J%+1)
+  370W$(I%,J%)=W$(I%,J%+1)
+  380NEXT J%
+  390W$(I%,8-M%)=E$:W%(I%,8-M%)=E%
+  400NEXT I%
+  410M%=M%+1:W%=W%-4
+  420ENDPROC
+  430 
+  440DEF PROCdisplay
+  450CLS:PRINT"Shoot the ";N$
+  460PRINT"Don't shoot the ";O$
+  470FOR I%=1 TO 4:FOR J%=1 TO 8
+  480PRINTTAB((I%-1)*10,20-J%*2);W$(I%,J%)
+  490NEXT J%,I%:H%=FALSE
+  500ENDPROC
+  510 
+  520DEF FNhit
+  530R%=FALSE
+  540C%=INT(X%/10)+1
+  550IF X%>=(C%-1)*10+LEN(W$(C%,1)) THEN 590
+  560IF W$(C%,1)="" THEN 590
+  570IF W%(C%,1)=O% THEN SOUND 1,-12,20,8:U%=U%+1:GOTO 590
+  580R%=TRUE:SOUND 0,-12,30,8
+  590=R%
+  600 
+  610DEF PROCfill
+  620A%=(W%+3)MOD 4+1:B%=(W%+3) DIV 4
+  630C%=INT(X%/10)+1
+  640W$(C%,1)=W$(A%,B%)
+  650W%(C%,1)=W%(A%,B%)
+  660W$(A%,B%)=""
+  670ENDPROC
+  680 
+  690DEF PROCbullet
+  700PRINTTAB(X%,Y%);" ";
+  710IF Y%>0 AND Y%<31 THEN Y%=Y%-1
+  720IF INKEY(-98)AND X%>1 THEN X%=X%-1
+  730IF INKEY(-67)AND X%<38THEN X%=X%+1
+  740IF INKEY(-104)AND Y%=31 THEN Y%=30:S%=S%+1
+  750PRINTTAB(X%,Y%);"i";
+  760ENDPROC
+  770 
+  780DEF PROCsetup
+  790  DIM F$(40),F%(40),G$(20),W$(4,8),W%(4,8):W%=32:X%=18:Y%=31
+  795M%=0:H%=TRUE:S%=0:U%=0
+  800ENDPROC
+  810 
+  820DEF PROCshuffle
+  830FOR K%=1 TO 20
+  840A%=RND(4):B%=RND(8)
+  850C%=RND(4):D%=RND(8)
+  860E%=W%(A%,B%):W%(A%,B%)=W%(C%,D%)
+  870E$=W$(A%,B%):W$(A%,B%)=W$(C%,D%)
+  880W%(C%,D%)=E%:W$(C%,D%)=E$
+  890NEXT K%
+  900ENDPROC
+  910 
+  960DEF PROCfile
+  970Z%=OPENUP"INDEX":INPUT#Z%,Q%
+  980FOR I%=1 TO Q%:INPUT#Z%,F%(I%),F$(I%),G$(I%)
+  990NEXT I%
+  995CLOSE#Z%
+ 1000CLS:PRINT'"Give the number of the exercise..."
+ 1010FOR I%=1 TO Q%
+ 1020PRINT;I%;")";TAB(4);G$(I%)
+ 1030NEXT I%
+ 1040INPUT R%
+ 1050F$=":"+STR$(F%(R%))+".L."+F$(R%)
+ 1060Z%=OPENUP F$
+ 1070INPUT#Z%,A$
+ 1080FOR I%=1 TO 4:FOR J%=1 TO 4
+ 1090INPUT#Z%,W$(I%,J%),W%(I%,J%)
+ 1100NEXT J%,I%
+ 1110INPUT#Z%,B$
+ 1120FOR I%=1 TO 4:FOR J%=5 TO 8
+ 1130INPUT#Z%,W$(I%,J%),W%(I%,J%)
+ 1140NEXT J%,I%
+ 1150CLOSE#Z%
+ 1155N%=RND(2):O%=3-N%
+ 1156IFN%=1 THEN N$=A$:O$=B$:GOTO 1160
+ 1158N$=B$:O$=A$
+ 1160ENDPROC

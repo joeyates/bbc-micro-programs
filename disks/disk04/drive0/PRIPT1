@@ -1,0 +1,18 @@
+    5 MODE 2
+    6 PRINT TAB(0,1);
+   10 DIM A%(8)
+   20 J%=0
+   30 FOR N%=1 TO 20000
+   50 IF N%<4 THEN P%=(N%>1) ELSE IF NOT -(N% MOD 2) THEN P%=FALSE:GOTO 100
+   60 R%=INT(SQR(N%)+.5)
+   70 D%=3
+   80 REPEAT:D%=D%+2:UNTIL D%>R% OR N% MOD D%=0 
+   90 P%=(D%>R%)
+  100 IF P% THEN J%=J%+2:A%(J%-1)=N% MOD 256:A%(J%)=N% DIV 256 
+  110 IF J%=8 THEN J%=0:PROCCHAR
+  120 NEXT N%
+  130 END
+  140 DEF PROCCHAR
+  150 VDU 23,240,A%(8),A%(7),A%(6),A%(5),A%(4),A%(3),A%(1),A%(1)
+  160 PRINT CHR$(240);
+  170 ENDPROC
