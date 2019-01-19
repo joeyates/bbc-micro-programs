@@ -1,6 +1,8 @@
-# 1
+# Disk1
 
-## 1: Drive 0 (Same as 14: Drive 0)
+## Disk1: Drive 0 (Same as 14: Drive 0)
+
+Files: 28/31
 
 !BOOT
 !MENU
@@ -24,12 +26,15 @@ REPTON8
 SNOOK1
 SNOOK2
 SNOOKER
-SPOOKY
+SPOOKY (BASIC)
 SPOOKY3
 Zalaga1
 Zalaga2
+tx - New transfer program
 
-## 1: Drive 2 (Same as 14: Drive 2)
+## Disk1: Drive 2 (Same as 14: Drive 2)
+
+Files: 26/31
 
 ARENA
 COMM2B
@@ -58,9 +63,11 @@ TERROR3
 TERROR4
 Terror
 
-# 2 - Damaged disk, same content as #8
+# Disk2
 
-## Drive 0
+## Disk2: Drive 0
+
+Files: 24/31
 
 !BOOT
 !MENU
@@ -69,7 +76,6 @@ Blaster
 C-EGG
 DENIS1
 DODGE
-
 Dennis2
 FASTPAC
 FRAK2
@@ -86,7 +92,12 @@ PURPLE
 RAID
 ROCKET
 
-## Drive 2
+## Disk2: Drive 2
+
+Label: (none)
+Size?: 19
+Tracks: 80
+Files: 22/31
 
 !M
 BANDIT
@@ -112,9 +123,9 @@ WIZARD
 
 A.CYLON
 
-# 3
+# Disk3
 
-## Drive 0
+## Disk3: Drive 0
 
 * !BOOT
 * Aviator
@@ -122,83 +133,146 @@ A.CYLON
 * SPITFIR
 * Screen
 
-## Drive 2
+## Disk3: Drive 2
 
 [empty]
 
-# 4
+# Disk4
 
-## 4: Drive 0
+## Disk4: Drive 0
 
-!BOOT
-BEETHOV - Plays Ode to Joy through the speaker (Listing photo)
-BELLS - Bell ringing patterns?
-COLMIX
-CURVFIT - Find function to fit a series of points (cubic spline?)
-DESIGN - draws an 8x8 grid, ADWX move a bar cursor around
-DETER - Matrix determinants (Listing photo)
-DRAW - Draw on screen using ADWX keys (Listing photo, run screenshot)
-F - another copy of 'FILM'
-FACFILE - Data?
-FILE3
-FILM - Fill 2D shapes with a colour. Code in assembler.
-  (Listing photo, Screenshot)
-FOURIER - Fourier transform. Syntax error BAD DIM (Listing photo)
-GIGFILE - Manage a list of gigs seen? Data file should be GIGS
-GRAPH - User inputs a user function and x minimum and maximum and draw a graph
-  (Listing photo)
-KOCH - Koch curves
-PATT1 - lissajous triangles
-PATT2
-PATT3
-PATT4
-PRIME - Prime numbers?
-PRIPATT - Print prime numbers as bit blocks to look for patterns
-  (Listing photo, Screenshot)
-QUCKSRT - Implementation of the Quicksort algorithm
-RNDWALK
-SIMULT - Simultaneous equations?
-STICK - Lissajous figures?
-TRICALC
-TURTLE
-WORDF - Data?
+Label: "4A:MYDISK"
+Size?: 86
+Files: 31/31
 
-## 4: Drive 2
+!BOOT - (** TODO **)
 
-[the same as 4: Drive 0??]
+BEETHOV - (Basic) Plays Ode to Joy through the speaker
+BELLS - (Basic) Bell ringing patterns?
+COLMIX - (Basic program) Experiments in colout mixing
+CURVFIT - (Basic) Find function to fit a series of points
+  (cubic spline?)
+DESIGN - (Basic) draws an 8x8 grid, ADWX move a bar cursor around
+DETER - (Basic) Matrix determinants
+DRAW - (Basic) Draw on screen using ADWX keys (run screenshot)
+F - (Basic) another copy of 'FILM'
+FACFILE - (Basic program) Manage Factory Records items in a file
+  called "FACTORY". Fields: Title, Artist, Format
+FILE3 - (load address 000000) Very long file.
+  Contains fragments of Basic programs. Memory dump?
+FILM - (Basic) Fill 2D shapes with a colour. Code in assembler.
+  (Screenshot)
+FOURIER - (Basic) Fourier transform. Syntax error BAD DIM
+GIGFILE - (Basic) Manage a list of gigs seen? Data file should be GIGS
+GRAPH - (Basic) User inputs a user function and x minimum and maximum and draw a graph
+KOCH - (Basic) Koch curves
+PATT1 - (Basic) lissajous triangles
+PATT2 - (Basic)
+PATT3 - (Basic)
+PATT4 - (Basic)
+PRIME - (Basic) Prime numbers?
+PRIPATT - (Basic) Print prime numbers as bit blocks to look for patterns
+  (Screenshot)
+PRIPT1 - (Basic)
+QUCKREC - (Basic) Recursive implementation of Quicksort
+QUCKSRT - (Basic) Iterative implementation of the Quicksort algorithm
+RNDWALK - (Basic)
+SIMULT - (Basic) Simultaneous equations?
+STICK - (Basic) Lissajous figures?
+TRICALC - (Basic) (Long program)
+TURTLE - (Basic)
+WORDF - (Basic)
 
-# 6
+## Disk4: Drive 2
 
-## Drive 0
+Label: 3B
+Size??: 65
+Files: 30/31
 
+BEETHOV - (identical)
+BELLS - (identical)
+COLMIX - (identical)
+CURVFIT - (identical)
+DESIGN - (identical)
+DETER - (identical)
+DRAW - (identical)
+F - (identical)
+FACFILE - (identical)
+FILM - (identical)
+FOURIER - (identical)
+GIGFILE - (identical)
+GRAPH - (identical)
+KOCH - (identical)
+PATT1 - (identical)
+PATT2 - (identical)
+PATT3 - (identical)
+PATT4 - (identical)
+PRIME - (identical)
+PRIPATT - (identical)
+PRIPT1 - (identical)
+QUCKREC - (identical)
+QUCKSRT - (identical)
+RNDWALK (identical)
+SIMULT - (identical)
+STICK - (identical)
+TRICALC (identical)
+TURTLE (identical)
+WORDF - (identical)
+
+# Disk6
+
+## Disk6: Drive 0
+
+Label: (none)
+Size??: 17
+Files: 4/31
+
+[disk6-drive0.cap]
 LEXBAK
 LEXIS
 
-## Drive 2
+## Disk6: Drive 2
 
-[empty]
+Label: (none)
+Size??: 0
+Files: 0/31
 
-# 7
+# Disk7
 
-## Drive 0
+## Disk7: Drive 0 - DONE
 
-!BOOT
-BOOKS
-PRIN
-README
+Label: 7A:BOOKLIST
+Size??: 70
+Files: 4/31
 
-## Drive 2 (Title: 7B)
+[disk7-drive0-boot-readme.cap]
+!BOOT - (Commands)
+PRIN - (Basic)
+README - (Text)
 
-BOOKFIL
-MULTPRC
-NAMEORD
-PRINT
-RUFORD
-VALTOT
+[BOOKS]
+BOOKS - (Data) 80402 bytes
 
-# 8
+## Disk7: Drive 2 - DONE
 
-## Drive 0
+Label: 7B:
+Size??: 14
+Files: 6/31
+
+BOOKFIL - (Basic)
+MULTPRC - (Basic)
+NAMEORD - (Basic)
+PRINT - (Basic)
+RUFORD - (Basic)
+VALTOT - (Basic)
+
+# Disk8
+
+## Disk8: Drive 0
+
+Label: (none)
+Size??: 55
+Files: 22/31
 
 !BOOT
 !MENU
@@ -223,7 +297,11 @@ PURPLE
 RAID
 ROCKET
 
-## 8, Drive 2
+## Disk8: Drive 2
+
+Label: (none)
+Size??: 27
+Files: 21/31
 
 !M
 BANDIT
@@ -249,9 +327,13 @@ WIZARD
 
 A.CYLON
 
-# 9 - Title: PASCAL, on label: "CHESS PASCAL"
+# Disk9 - Title: PASCAL, on label: "CHESS PASCAL"
 
-## Drive 0
+## Disk9: Drive 0
+
+Label: CHESS
+Size??: 26
+Files: 9/31
 
 !BOOT
 C32/1
@@ -262,17 +344,22 @@ PASCAL
 ROMPASC
 X
 
-## Drive 2
+## Disk9: Drive 2
 
-CNTNUM2
-CONTNUM
-DETER
-NIM
+Label: PASCAL
+Size??: 31
+Files: 21/31
+
+[disk9-drive2.cap]
+CNTNUM2 - (Pascal)
+CONTNUM - (Pascal)
+DETER - (Pascal)
+NIM - (Pascal)
 PASCAL
-PATTERN
-PERSIAN
+PATTERN - (Pascal)
+PERSIAN - (Pascal)
 ROMPASC
-SORT
+SORT - (Pascal)
 
 O.PATTERN
 O.deter
@@ -290,72 +377,92 @@ P.RTIME3
 
 Side 2 has >=2 of my programs in Pascal, plus the compiled (Object) code
 
-# 12 - MY PROGRAMS
+# Disk12 - MY PROGRAMS
 
-## Drive 0
+## Disk12: Drive 0
 
-FILECOR
-FILEINP - (Listing photo)
-FRVB - French verbs?
-FRVBAK
-ITVBS - Italian verbs?
-RODCOLS - Coloured Lissajous figures (Listing photo, screenshot)
-WORKING (Size: 998)
+Label: (none)
+Size??: 11
+Files: 22/31
 
-*.AMENGSP
-*.AMENGTR
-*.AMENGVO
-*.CH/SURF
-*.COOKTEX
-*.EATDOOR
-*.GONCLSS
-*.IR/REG
-*.JOBWORK
-*.LSILENT
-*.MKSTAT
-*.MOODNOI (?)
-*.MUCHMNY
-*.SEETEN2
-*.SMEDIAL
+FILECOR - (Basic)
+FILEINP - (Basic)
+FRVB - (Basic) French verbs?
+FRVBAK - (Basic)
+ITVBS - (Basic) Italian verbs?
+RODCOLS - (Basic) Coloured Lissajous figures (screenshot)
+WORKING - (Basic) (Size: 998)
 
-## Drive 2
+[** TODO **]
+*.AMENGSP - (data)
+*.AMENGTR - (data)
+*.AMENGVO - (data)
+*.CH/SURF - (data)
+*.COOKTEX - (data)
+*.EATDOOR - (data)
+*.GONCLSS - (data)
+*.IR/REG - (data)
+*.JOBWORK - (data)
+*.LSILENT - (data)
+*.MKSTAT - (data)
+*.MOODNOI - (data)
+*.MUCHMNY - (data)
+*.SEETEN2 - (data)
+*.SMEDIAL - (data)
 
-8QUEENS - (Listing photo, Screenshot)
+## Disk12: Drive 2
+
+Label: (none)
+Size??: 33
+Files: 25/31
+
+[]
+8QUEENS - (Screenshot)
 ALPHA
 ALPHATY
-C
-CLONE
-DESIGN
-DESIGNP
-F80
-FRCTION
-KEYB
-LEXINP
-LEXIS
-LOOK
-MATMULT
-MEMLOOK
-MSEARCH
-READIDS
-SIMULT
-WORDF
-WORKING
+
+[disk12-drive2-c-working.cap]
+C - (Basic) Lexis, with some assembler
+CLONE - (Basic) Disk cloning program
+DESIGN - (Basic)
+DESIGNP - (Basic)
+F80 - (Basic) Disk formatting program
+FRCTION - (Basic) Fractions?
+KEYB - (Basic)
+LEXINP - (Basic) Input program for Lexis files
+LEXIS - (Basic)
+LOOK - (Basic)
+MATMULT - (Basic)
+MEMLOOK - (Basic) Memory dump
+MSEARCH - (Basic)
+READIDS - (Basic) Disk structure analyzer
+SIMULT - (Basic)
+WORDF - (Basic)
+WORKING - (Basic)
 
 D.DCBELL
-D.TYPE
+D.TYPE - (Basic) Game to type the alphabet as quickly as possible
 M.DETER
 M.GRAPH
 M.SIMULT
 
-# 12(?) - Cumana
+# Disk13 - Cumana
 
-## Drive 0
+## Disk13: Drive 0
+
+Label: 9A:MASTER
+Size??: 01
+Files: 3/31
 
 BVERIFY
 FORM40
 FORM80
 
-## Drive 2
+## Disk13: Drive 2
+
+Label: 9B
+Size??: 12
+Files: 9/31
 
 BOOKFIL
 DETER
@@ -367,9 +474,9 @@ GRAPH
 KOCH
 SIMULT
 
-# 14 - GAMES
+# Disk14 - GAMES
 
-## 14: Drive 0 (Same as 1: Drive 0)
+## Disk14: Drive 0 (Same as 1: Drive 0)
 
 !BOOT
 !MENU
@@ -427,9 +534,9 @@ TERROR3
 TERROR4
 Terror
 
-# 15 - Title: LANGUAGES
+# Disk15 - Title: LANGUAGES
 
-## Drive 0
+## Disk15: Drive 0
 
 !BOOT
 !MENU
@@ -446,7 +553,7 @@ VIEW
 ViewShe
 WORDWIS
 
-## Drive 2
+## Disk15: Drive 2
 
 CL2DISC
 CL4DISP
@@ -458,9 +565,13 @@ E8271
 ReadIDs
 XAMINE
 
-# 16 - Progamming Utilities
+# Disk16 - Progamming Utilities
 
-## Drive 0
+## Disk16: Drive 0
+
+Label: (none)
+Size??: 53
+Files: 11/31
 
 !BOOT
 BASEDT
@@ -474,22 +585,34 @@ READIDS
 SCANNER
 SCTEDIT
 
-## Drive 2
+## Disk16: Drive 2
+
+Label: (none)
+Size??: (08)
+Files: 3/31
 
 L
-LAB000
+LAB000 - may be modified Labyrinth with 255 lives
 Labyrin
 
-# 17 - BOOKFILE
+# Disk17 - BOOKFILE
 
-## Drive 0
+## Disk17: Drive 0
+
+Label: (none)
+Size??: 29
+Files: 4/31
 
 !BOOT
 BOOKS
 PRIN
 README
 
-## Drive 2
+## Disk17: Drive 2
+
+Label: (none)
+Size??: 43
+Files: 7/31
 
 BOOKFIL
 JUNK
@@ -499,9 +622,13 @@ PRINT
 RUFORD
 VALTOT
 
-# 19 - TAPES LIST
+# Disk19 - TAPES LIST
 
-## Drive 0
+## Disk19: Drive 0
+
+Label: (none)
+Size??: 47
+Files: 10/31
 
 !BOOT
 AUTCREA
@@ -514,13 +641,18 @@ TAPES
 TAPESBK
 X
 
-## Drive 2
+## Disk19: Drive 2
 
 [unreadbale - disk may be single-sided]
+"Sector not found at 00/02"
 
-# 20 - LEXIS development
+# Disk20 - LEXIS development
 
-## Drive 0
+## Disk20: Drive 0
+
+Label: (none)
+Size??: 48
+Files: 29/31
 
 !BOOT
 CONVERT
@@ -552,7 +684,11 @@ P.GRAMMAR
 P.VOCAB
 P.VOWELS
 
-## Drive 2
+## Disk20: Drive 2
+
+Label: (none)
+Size??: 80
+Files: 24/31
 
 C
 
@@ -586,9 +722,13 @@ V.YNG/OLD
 * D. - difference?
 * P. - programs?
 
-# (BASF disk) - MANDELBROT
+# Disk21: (BASF disk) - MANDELBROT
 
-## Drive 0
+## Disk21: Drive 0
+
+Label: Screentest
+Size: 34
+Files: 30/31
 
 !BOOT
 CHOICE
@@ -620,7 +760,11 @@ TEST7
 TEST8
 TEST9
 
-## Drive 2
+## Disk21: Drive 2
+
+Label: (none)
+Size: 39
+Files 16/31
 
 MANDEL1
 MANDEL2
@@ -640,16 +784,24 @@ S.PIC2c
 S.PIC2d
 S.PIC4
 
-# Facet
+# Disk22: Facet
 
-## Drive 0
+## Disk22: Drive 0
+
+Label: (none)
+Size: 16
+Files: 4/31
 
 DUMMAKE
 DUMMY
 DUMREAD
 FACET - Keyword-based book indexing program
 
-## Drive 2
+## Disk22: Drive 2
+
+Label: (none)
+Size: 07
+Files: 6/31
 
 ALLSORT
 CLASS1
