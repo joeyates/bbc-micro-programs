@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+if ARGV.length != 2
+  raise "Supply input and output filenames"
+end
+
+input = ARGV[0]
+output = ARGV[1]
+
+if !File.exist?(input)
+  raise "Input file '#{input}' does not exist"
+end
+
+if File.exist?(output)
+  raise "Output file '#{output}' already exists"
+end
+
+bytes = ""
+
+File.readlines(input).each.with_index do |line, i|
+  data = line[/\s((\w{2} ){,8})/, 1]
+  next if !data
+  hex = data.split(" ")
+  values = hex.map { |h| h.to_i(16) }
+  bytes << values.map(&:chr).join
+end
+
+File.write(output, bytes)
