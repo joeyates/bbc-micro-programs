@@ -1,0 +1,30 @@
+*CAT
+^@^@^@^@^@^@^@^@^@^@^@^@ (16)
+Drive 0             Option 0 (off^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     DUMMAKE             DUMMY               DUMREAD             FACET       
+
+04 files of 31 on 80 tracks
+>*INFO *
+$.FACET       FF1900 FF801F 000337 007
+$.DUMREAD     FF1900 FF801F 000065 006
+$.DUMMY       000000 000000 00007A 005
+$.DUMMAKE     FF1900 FF801F 000237 002
+>*CAT :2
+^@^@^@^@^@^@^@^@^@^@^@^@ (07)
+Drive 2             Option 0 (off^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     ALLSORT             CLASS1              CLASS2              CORRECT     
+     LIST                SORT           
+06 files of 31 on 80 tracks
+>*INFO :2.*
+$.SORT        FF1900 FF801F 00026A 05D
+$.CORRECT     FF1900 FF801F 000128 05B
+$.LIST        FF1900 FF801F 00004A 05A
+$.ALLSORT     FF1900 FF801F 000287 057
+$.CLASS2      000000 000000 004000 017
+$.CLASS1      000000 000000 0014FA 002

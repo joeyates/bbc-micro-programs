@@ -1,0 +1,34 @@
+*CAT
+^@^@^@^@^@^@^@^@^@^@^@^@ (53)
+Drive 0             Option 3 (EXEC)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     !BOOT               BASEDT   L          DIS      L          DISCTAP  L  
+     DISPRIN             L        L          QUTEDIT             RAM         
+     READIDS             SCANNER  L          SCTEDIT  L     
+11 files of 31 on 80 tracks
+>*INFO *
+$.L        L  001100 FF5D00 005100 0AF
+$.!BOOT       000000 000000 00000D 0AE
+$.SCANNER  L  FF0E00 FF802B 00084C 0A5
+$.DIS      L  FF1900 FF801F 00171F 08D
+$.SCTEDIT  L  FF1900 FF801F 001100 07C
+$.DISCTAP  L  FF0E00 FF802B 000641 075
+$.BASEDT   L  FF0E00 FF802B 000682 06E
+$.QUTEDIT     FF0E00 FF802B 00109B 056
+$.RAM         FF1900 FF801F 000A3A 01A
+$.DISPRIN     FF1900 FF801F 000FA6 00A
+$.READIDS     FF1900 FF801F 000340 006
+>*CAT :2
+^@^@^@^@^@^@^@^@^@^@^@^@ (08)
+Drive 2             Option 0 (off^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     L                   LABOOO              Labyrin        
+03 files of 31 on 80 tracks
+>*INFO :2.*
+$.Labyrin     001100 FF5D00 005100 0A4
+$.LABOOO      001100 FF5D00 005100 053
+$.L           001100 FF5D00 005100 002

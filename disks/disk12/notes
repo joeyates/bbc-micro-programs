@@ -1,0 +1,57 @@
+# Drive 0
+
+FILECOR - (Basic)
+FILEINP - (Basic)
+FRVB - (Basic) French verbs?
+FRVBAK - (Basic)
+ITVBS - (Basic) Italian verbs?
+RODCOLS - (Basic) Coloured Lissajous figures (screenshot)
+WORKING - (Basic) (Size: 998)
+
+[** TODO **]
+*.AMENGSP - (data)
+*.AMENGTR - (data)
+*.AMENGVO - (data)
+*.CH/SURF - (data)
+*.COOKTEX - (data)
+*.EATDOOR - (data)
+*.GONCLSS - (data)
+*.IR/REG - (data)
+*.JOBWORK - (data)
+*.LSILENT - (data)
+*.MKSTAT - (data)
+*.MOODNOI - (data)
+*.MUCHMNY - (data)
+*.SEETEN2 - (data)
+*.SMEDIAL - (data)
+
+# Drive 2
+
+8QUEENS - (Screenshot)
+ALPHA
+ALPHATY
+
+[disk12-drive2-c-working.cap]
+C - (Basic) Lexis, with some assembler
+CLONE - (Basic) Disk cloning program
+DESIGN - (Basic)
+DESIGNP - (Basic)
+F80 - (Basic) Disk formatting program
+FRCTION - (Basic) Fractions?
+KEYB - (Basic)
+LEXINP - (Basic) Input program for Lexis files
+LEXIS - (Basic)
+LOOK - (Basic)
+MATMULT - (Basic)
+MEMLOOK - (Basic) Memory dump
+MSEARCH - (Basic)
+READIDS - (Basic) Disk structure analyzer
+SIMULT - (Basic)
+WORDF - (Basic)
+WORKING - (Basic)
+
+D.DCBELL
+D.TYPE - (Basic) Game to type the alphabet as quickly as possible
+M.DETER
+M.GRAPH
+M.SIMULT

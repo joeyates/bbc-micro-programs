@@ -1,0 +1,23 @@
+*CAT
+LANGUAGE     (82)
+Drive 0             Option 3 (EXEC)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     !BOOT               Avia2               Aviator             SPITFIR     
+     Screen         
+05 files of 31 on 80 tracks
+>*INFO *
+$.!BOOT       000000 FFFFFF 000013 062
+$.Aviator     001100 001100 004700 01B
+$.Avia2       000400 000400 000400 017
+$.Screen      007100 007100 000F00 008
+$.SPITFIR     001900 001E9C 0005C2 002
+>*CAT :2
+^@^@^@^@^@^@^@^@^@^@^@^@ (01)
+Drive 2             Option 0 (off^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+
+00 files of 31 on 80 tracks

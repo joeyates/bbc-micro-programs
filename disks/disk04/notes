@@ -1,0 +1,72 @@
+# Drive 0
+
+!BOOT - (** TODO **)
+
+BEETHOV - (Basic) Plays Ode to Joy through the speaker
+BELLS - (Basic) Bell ringing patterns?
+COLMIX - (Basic program) Experiments in colout mixing
+CURVFIT - (Basic) Find function to fit a series of points
+  (cubic spline?)
+DESIGN - (Basic) draws an 8x8 grid, ADWX move a bar cursor around
+DETER - (Basic) Matrix determinants
+DRAW - (Basic) Draw on screen using ADWX keys (run screenshot)
+F - (Basic) another copy of 'FILM'
+FACFILE - (Basic program) Manage Factory Records items in a file
+  called "FACTORY". Fields: Title, Artist, Format
+FILE3 - (load address 000000) Very long file.
+  Contains fragments of Basic programs. Memory dump?
+FILM - (Basic) Fill 2D shapes with a colour. Code in assembler.
+  (Screenshot)
+FOURIER - (Basic) Fourier transform. Syntax error BAD DIM
+GIGFILE - (Basic) Manage a list of gigs seen? Data file should be GIGS
+GRAPH - (Basic) User inputs a user function and x minimum and maximum and draw a graph
+KOCH - (Basic) Koch curves
+PATT1 - (Basic) lissajous triangles
+PATT2 - (Basic)
+PATT3 - (Basic)
+PATT4 - (Basic)
+PRIME - (Basic) Prime numbers?
+PRIPATT - (Basic) Print prime numbers as bit blocks to look for patterns
+  (Screenshot)
+PRIPT1 - (Basic)
+QUCKREC - (Basic) Recursive implementation of Quicksort
+QUCKSRT - (Basic) Iterative implementation of the Quicksort algorithm
+RNDWALK - (Basic)
+SIMULT - (Basic) Simultaneous equations?
+STICK - (Basic) Lissajous figures?
+TRICALC - (Basic) (Long program)
+TURTLE - (Basic)
+WORDF - (Basic)
+
+# Drive 2
+
+BEETHOV - (identical)
+BELLS - (identical)
+COLMIX - (identical)
+CURVFIT - (identical)
+DESIGN - (identical)
+DETER - (identical)
+DRAW - (identical)
+F - (identical)
+FACFILE - (identical)
+FILM - (identical)
+FOURIER - (identical)
+GIGFILE - (identical)
+GRAPH - (identical)
+KOCH - (identical)
+PATT1 - (identical)
+PATT2 - (identical)
+PATT3 - (identical)
+PATT4 - (identical)
+PRIME - (identical)
+PRIPATT - (identical)
+PRIPT1 - (identical)
+QUCKREC - (identical)
+QUCKSRT - (identical)
+RNDWALK (identical)
+SIMULT - (identical)
+STICK - (identical)
+TRICALC (identical)
+TURTLE (identical)
+WORDF - (identical)
+

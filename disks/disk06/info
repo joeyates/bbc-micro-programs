@@ -1,0 +1,19 @@
+>*CAT
+^@^@^@^@^@^@^@^@^@^@^@^@ (19)
+Drive 0             Option 0 (off^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     LEXBAK              LEXIS          
+02 files of 31 on 80 tracks
+>*INFO *
+$.LEXIS       FF1900 FF801F 000683 009
+$.LEXBAK      FF1900 FF801F 000689 002
+>*CAT :2
+^@^@^@^@^@^@^@^@^@^@^@^@ (03)
+Drive 2             Option 0 (off^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+
+00 files of 31 on 80 tracks

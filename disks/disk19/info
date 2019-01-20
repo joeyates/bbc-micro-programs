@@ -1,0 +1,24 @@
+*CAT
+^@^@^@^@^@^@^@^@^@^@^@^@ (47)
+Drive 0             Option 2 (RUN^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     !BOOT               AUTCREA             AUTUMNB             CLEAR       
+     M                   SAMPLE              SUMCENT             TAPES       
+     TAPESBK             X              
+10 files of 31 on 80 tracks
+>*INFO *
+$.CLEAR       FF1900 FF801F 000037 06E
+$.M           FF1900 FF801F 000280 06B
+$.SUMCENT     FF1900 FF801F 00098D 061
+$.AUTCREA     FF1900 FF801F 000697 05A
+$.AUTUMNB     FF1900 FF801F 000309 056
+$.SAMPLE      001FA2 001FA2 000138 054
+$.X           FF1900 FF801F 000338 050
+$.!BOOT       008000 00D9CD 004000 010
+$.TAPESBK     000000 000000 000671 009
+$.TAPES       000000 000000 000680 002
+>*CAT :2
+
+Sector not found at 00/02

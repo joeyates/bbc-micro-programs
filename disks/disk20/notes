@@ -1,0 +1,67 @@
+* LEXIS development
+
+# Drive 0
+
+!BOOT
+CONVERT
+FILECOR
+LEXIS - Initial menu (Screenshot)
+LEXLONG - Jumps stright in to Grammar (?)
+Vocab - data file
+WORKING - Development version of Lexis (Size: A86)
+
+## Notes
+
+* C. - consonants
+* D. - difference?
+* P. - programs?
+
+C.'r'PRON
+C.CH/K
+C.CONS/j/
+C.FORTLEN
+C.INIT-TH
+C.J/G
+C.MED-TH
+C.SEFINAL
+D.A/OUGH
+D.ART/CAT
+D.GO/NEW
+D.GO/SAW
+D.LONGSHT
+D.NOT/CUT
+D.PUT/BUT
+D.PUT/TOO
+D.SEE/TEN
+P.CONSNNT
+P.GRAMMAR
+P.VOCAB
+P.VOWELS
+
+# Drive 2
+
+C
+
+G.GER/INF
+G.IRREGPL
+G.MAKE/DO
+G.MOD/AUX
+G.PAST/PP
+G.PLCTIME
+G.PREPAST
+G.PRONPOS
+G.THE/0
+G.WEAKFMS
+V.AIR/STN
+V.BOD/LIQ
+V.BODFACE
+V.BTHTOOL
+V.CAR/HSE
+V.CLO/RM
+V.FE/MALE
+V.HANDMTH
+V.KIT/BED
+V.MEATVEG
+V.NATIONS
+V.PC/CONT
+V.YNG/OLD

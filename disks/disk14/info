@@ -1,0 +1,82 @@
+*CAT
+^@^@^@^@^@^@^@^@^@^@^@^@ (20)
+Drive 0             Option 3 (EXEC)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     !BOOT               !MENU               BASE                Combat      
+     GRIDDAT             GRIDMC              GRIDRUN             METEOR1     
+     METEOR2             MazeKil             PHAN2               POLE        
+     Phantom             PolPos2             REP                 REPTON      
+     REPTON2             REPTON3             REPTONB             SNOOK1      
+     SNOOK2              SNOOKER             SPOOKY              SPOOKY3     
+     Zalaga1             Zalaga2        
+26 files of 31 on 80 tracks
+>*INFO *
+$.POLE        FF1900 FF8023 000343 315
+$.PolPos2     002000 004B00 002B23 2E9
+$.Zalaga1     001900 001900 000490 2E4
+$.Zalaga2     003000 004522 002D25 2B6
+$.GRIDMC      001D00 002236 000812 2AD
+$.GRIDDAT     002C60 002C60 00039F 2A9
+$.GRIDRUN     FF1900 FF802B 00062E 2A2
+$.SNOOKER     FF1B00 FF801F 0006B1 29B
+$.SNOOK1      FF1B00 FF801F 00147D 286
+$.SNOOK2      001900 001900 000B00 27B
+$.METEOR2     001900 001900 002200 259
+$.!MENU       FF1900 FF801F 0006B6 252
+$.BASE        001900 001900 0030C0 221
+$.!BOOT       000000 000000 00000F 220
+$.Combat      001900 001900 002A00 1F6
+$.MazeKil     001900 0041C9 004700 1AF
+$.Phantom     0008B8 0009F0 0001AE 1AD
+$.PHAN2       003000 003000 004FFF 15D
+$.SPOOKY      FF1900 FF801F 000679 156
+$.SPOOKY3     001900 001900 005EA0 0F7
+$.METEOR1     FF1900 FF801F 0002DD 0F4
+$.REPTON2     002FD0 002FD0 0013FF 0E0
+$.REP         002900 002B00 000700 0D9
+$.REPTON      002300 0043C6 002100 0B8
+$.REPTONB     001100 007010 005F64 058
+$.REPTON3     001900 000700 005600 002
+>*CAT :2
+^@^@^@^@^@^@^@^@^@^@^@^@ (63)
+Drive 2             Option 0 (off^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     ARENA               COMM2B              COMM2C              JETSET      
+     JSW2                Karate              MAN                 MANIC       
+     MINER               QMANB2              QMANBRO             REPTON1     
+     REPTON2             REPTON3             REPTON4             REPTONA     
+     REPTONB             RepMain             S-HUNT2             SPYHUNT     
+     TERPIC              TERROR1             TERROR2             TERROR3     
+     TERROR4             Terror         
+26 files of 31 on 80 tracks
+>*INFO :2.*
+$.MINER       000400 000400 00008E 30B
+$.MANIC       FF1900 FF801F 00001D 30A
+$.MAN         002C00 000000 005400 2B6
+$.COMM2B      FF1900 FF8023 000117 2B4
+$.QMANBRO     001900 000000 000AD7 2A9
+$.QMANB2      001900 000000 001391 295
+$.ARENA       001600 003000 002A00 26B
+$.TERPIC      005000 002000 003000 23B
+$.Terror      002000 002100 000147 239
+$.TERROR1     000900 000900 00010B 237
+$.TERROR3     0009F5 FF09F5 00460A 1F0
+$.TERROR4     005710 00670F 001062 1DF
+$.COMM2C      001200 001200 004A00 195
+$.Karate      001900 006500 005050 144
+$.S-HUNT2     001670 006600 005090 0F3
+$.SPYHUNT     007000 FF8023 0005D8 0ED
+$.JSW2        002800 004D00 005800 095
+$.REPTONA     000C00 000C00 000100 094
+$.REPTONB     004700 005700 003018 063
+$.REPTON4     000400 000400 000400 05F
+$.REPTON3     005810 005810 000800 057
+$.REPTON1     001900 008023 000196 055
+$.TERROR2     000400 FF0400 0003FF 051
+$.JETSET      001900 001900 000550 04B
+$.RepMain     FF1900 FF8023 0002AD 048
+$.REPTON2     001200 002F00 004600 002

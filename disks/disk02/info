@@ -1,0 +1,78 @@
+*CAT
+^@^@^@^@^@^@^@^@^@^@^@^@ (40)
+Drive 0             Option 3 (EXEC)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     !BOOT               !MENU               ARCADS2             Blaster     
+     C-EGG               DEFEND              DEFEND2             DENIS1      
+     DODGE               Dennis2             FASTPAC             FRAK2       
+     GORILLA             HOPPER              HOPPER1             HUNCH1      
+     HUNCHBA             JETPAC              KILLA               PAIN        
+     PAINTER             PURPLE              RAID                ROCKET      
+
+24 files of 31 on 80 tracks
+>*INFO *
+$.!MENU       FF1900 FF801F 000727 28C
+$.ARCADS2     001900 003F00 004C00 240
+$.PURPLE      002000 002000 0009EC 236
+$.JETPAC      002000 005900 003A00 1FC
+$.KILLA       FF1900 FF8023 0011F4 1EA
+$.DODGE       002C1D 002C1D 000B00 1DF
+$.GORILLA     002000 004C10 002C70 1B2
+$.DEFEND2     FF1900 FF1900 002B00 187
+$.DEFEND      FF1900 FF8023 00071A 17F
+$.HUNCH1      FF7000 FF801F 00006B 17E
+$.HUNCHBA     001900 001900 0022B2 15B
+$.HOPPER1     001900 001900 002700 134
+$.HOPPER      FF1900 FF8023 000323 130
+$.FRAK2       003000 00468A 002D00 103
+$.DENIS1      FF7000 FF8023 00034B 0FF
+$.Dennis2     001900 003475 002690 0D8
+$.!BOOT       004556 FF4F42 000032 0D7
+$.FASTPAC     003000 0054DF 002530 0B1
+$.Blaster     003000 005900 002A00 087
+$.C-EGG       001100 0029AB 002700 060
+$.PAIN        FF1900 FF1900 002650 039
+$.PAINTER     FF1900 FF8023 0005A0 033
+$.ROCKET      FF1900 FF8023 000481 02E
+$.RAID        FF1900 FF1900 002B9D 002
+>*CAT :2
+^@^@^@^@^@^@^@^@^@^@^@^@ (19)
+Drive 2             Option 0 (off^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     !M                  BANDIT              CUBERT              CYLON       
+     DARTS               DEMOLAT             FRUIT1              FRUIT2      
+     FRUIT3              Labyrin             MAZE                MAZE2       
+     MAZE3               MONO                MONOPOL             QBERT       
+     QC                  VOLCANO             WIZADO2             WIZADOR     
+     WIZARD         
+
+   A.CYLON          
+22 files of 31 on 80 tracks
+>*INFO :2.*
+$.!M          FF1900 FF801F 000555 28B
+$.WIZARD      001100 004F6A 003F00 24C
+$.VOLCANO     001900 0048D4 003000 21C
+$.CYLON       FF1900 FF8023 00012A 21A
+$.CUBERT      FF1900 FF8023 0001F4 218
+$.QC          000C00 000C00 0001FF 216
+$.Labyrin     001100 FF5D00 005100 1C5
+$.MAZE        FF1900 FF8023 00012A 1C3
+$.MAZE2       000E00 003AD3 002D1C 195
+$.WIZADOR     001900 0020E3 000840 18C
+$.WIZADO2     001100 004F6A 003E96 14D
+$.BANDIT      001900 004100 002830 124
+$.MAZE3       FF1900 FF8023 00118E 112
+$.MONO        FF1900 FF8023 0004B8 10D
+$.DEMOLAT     004F00 004F00 000F00 0FE
+$.QBERT       001900 001900 002500 0D9
+$.DARTS       FF1900 FF8023 0011E3 0C7
+$.FRUIT2      001900 001900 000055 07D
+$.FRUIT3      001900 002100 002700 056
+$.FRUIT1      001900 001900 001470 041
+$.MONOPOL     FF1900 FF8023 003E86 002
+>*INFO :2.A.*
+A.CYLON       001900 000BC7 004900 07E
