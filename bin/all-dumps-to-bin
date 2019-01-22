@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+if ARGV.length != 1
+  raise "Supply a root path"
+end
+
+root = ARGV[0]
+
+glob = File.join(root, "**", "*.dump")
+
+Dir.glob(glob) do |input|
+  path = File.dirname(input)
+  base = File.basename(input, ".*")
+  output = File.join(path, base)
+  if File.exist?(output)
+    $stderr.puts "Skipping '#{input}' as '#{output}' exists"
+    next
+  end
+  puts "Converting '#{input}' -> '#{output}'"
+  `bin/dump-to-bin '#{input}' '#{output}'`
+end
