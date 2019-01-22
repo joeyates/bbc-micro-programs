@@ -1,0 +1,45 @@
+>LIST
+   60maxcol%=7
+   70DIM C%(255),A 30
+   80FOR N%=0 TO 255
+   90C%(N%)=0
+  100NEXT
+  120INPUT"file :"A$
+  130file=OPENUP A$
+  140FOR N%=1 TO 128*128
+  150B%=BGET#file
+  160C%(B%)=C%(B%)+1
+  170NEXT
+  190max=(128*128-C%(255))/maxcol%
+  200C%(255)=0
+  210J%=maxcol%
+  220T%=0
+  230FORN%=0 TO 254
+  240T%=T%+C%(N%)
+  250C%(N%)=J%
+  260IF T%>=max*(maxcol%-J%+1) J%=J%-1:IF J%<1 J%=1
+  270NEXT
+  300MODE2
+  310VDU 28,16,31,19,0
+  320VDU 19,1,5;0;
+  330VDU 19,2,4;0;
+  340VDU 19,3,6;0;
+  350VDU 19,4,2;0;
+  360VDU 19,5,3;0;
+  370VDU 19,6,1;0;
+  380H%=8
+  390PTR#file=0
+  400FORJ%=0 TO 127
+  410FORK%=0 TO 127
+  420B%=C%(BGET#file)
+  430GCOL 0,B%
+  440X%=J%*H%
+  450Y%=K%*H%
+  460MOVE X%,Y%
+  470PLOT 1,0,H%-1
+  480NEXTK%,J%
+  491$A="SAVE S."+A$+" 3000+5000"
+  492X%=A MOD 256:Y%=A DIV 256
+  493CALL &FFF7
+  500END
+>*FX3,0

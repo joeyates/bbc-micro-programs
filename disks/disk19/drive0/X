@@ -1,0 +1,54 @@
+>LIST
+   10 
+   20 
+   30 
+   40 
+   50:
+   60MODE 7
+   70HIMEM=&6000:S%=&6000
+   80DIM p%(3),d%(3),env% 14,load% 20
+   90:
+  100INPUT"Autumn file name  : "name$
+  110$load%="LOAD "+name$+" 6000"
+  111X%=load%:Y%=load% DIV 256:CALL &FFF7
+  120REPEAT
+  130INPUT"Tempo (1=fastest) : "tempo%
+  140UNTIL tempo%>0
+  150REPEAT
+  160INPUT"REP TUNE"rep$
+  170rep$=CHR$(ASC(rep$) AND &DF)
+  180UNTIL rep$="Y" OR rep$="N"
+  190REPEAT
+  200FOR I%=0 TO 2
+  210p%=(I%+1)=S%+?(S%+I%*2)+256*?(S%+I%*2+1)
+  220d%(I%+1)=FALSE
+  230NEXT
+  240REPEAT
+  250FOR I%=1 TO 3
+  260IF ADVAL(-5-I%)>0 PROCsound
+  270NEXT
+  280UNTIL d%(1) AND d%(2) AND d%(3)
+  290UNTIL rep$="N"
+  300 END
+  310:
+  320DEF PROCsound
+  330IF d%(I%) ENDPROC
+  340p%=?p%(I%):d%=?(p%(I%)+1)
+  350IF p%=254 PROCenv:ENDPROC
+  360IF p%=255 d%(I%)=TRUE:ENDPROC
+  370IF p%=0 V%=0 ELSE V%=I%
+  380SOUND I%,V%,p%,d%*tempo%
+  390p%(I%)=p%(I%)+2
+  400ENDPROC
+  410:
+  420DEF PROCenv
+  430IF ADVAL(-5-I%)<>15 ENDPROC
+  440?env%=I%
+  450FOR J%=1 TO 13
+  460J%?env%=?(p%(I%)+J%)
+  470NEXT
+  480X%=env%:Y%=env% DIV 256
+  490A%=8:CALL &FFF1
+  500p%(I%)=p%(I%)+14
+  510ENDPROC
+>*FX3,0

@@ -1,0 +1,60 @@
+>LIST
+   60maxcol%=7
+   70MODE2
+   80S%=255
+   90DIM C%(S%)
+  100VDU28,16,31,19,0
+  110INPUT"x,y:"j,k
+  120INPUT"  s:"q
+  130var=maxcol%/LOG(S%)
+  140FORN%=1TO S%
+  150C%(N%)=maxcol%-INT(LOG(N%)*var)
+  160NEXT
+  170VDU19,1,5;0;
+  180VDU19,2,4;0;
+  190VDU19,3,6;0;
+  200VDU19,4,2;0;
+  210VDU19,5,3;0;
+  220VDU19,6,1;0;
+  230:
+  250Q%=1024:M%=1
+  260REPEAT
+  270L=q/M%
+  280H%=Q%/M%
+  290FOR J%=0 TO M%-1
+  300FOR K%=0 TO M%-1
+  310IF K% MOD 2 OR J% MOD 2 PROCpt
+  320NEXT:NEXT
+  330M%=M%*2
+  340PRINT M%
+  350UNTIL M%=256
+  360PRINT"END"
+  370END
+  380:
+  390DEF FNm(u,v)
+  400N%=-1:x=0:y=0
+  410REPEAT
+  420y2=y*y
+  430x2=x*x
+  440y=2*x*y+v
+  450x=x2-y2+u
+  460N%=N%+1
+  470UNTIL N%=S% OR x2+y2>=4
+  480=N%
+  490:
+  500DEF PROCpt
+  510x=j+L*J%
+  520y=k+L*K%
+  530GCOL 0,C%(FNm(x,y))
+  540X%=J%*H%
+  550Y%=K%*H%
+  560MOVE X%,Y%
+  570MOVE X%+H%-1,Y%
+  580PLOT 85,X%,Y%+H%-1
+  590PLOT 85,X%+H%-1,Y%+H%-1
+  600ENDPROC
+  610:
+  660DEF PROCgcol(B%)
+  670GCOL 0,B%
+  680ENDPROC
+>*FX3,0

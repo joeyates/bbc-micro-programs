@@ -1,0 +1,31 @@
+>LIST
+   10DIM data% 4097,ID% 200,bl% 20
+   20X%=bl% MOD 256:Y%=bl% DIV 256
+   30MODE7:A%=&7F:osw%=&FFF1:?bl%=0
+   70FOR tr%=0 TO 79
+  110PROCOSW(0,ID%,3,&5B,tr%,0,18,0,0)
+  130IF bl%?10<>0 GOTO 340
+  160PROCOSW(0,0,2,&3A,&12,?ID%,0,0,0)
+  220PROCOSW(0,data%,3,&57,?ID%,0,32*ID%?3+NUM%+1,0,0)
+  230PROCDISP
+  330PROCOSW(0,0,2,&3A,&12,tr%,0,0,0)
+  340NEXT tr%:END
+  350DEFPROCOSW(side%,addr%,par%,comm%,P1%,P2%,P3%,P4%,P5%)
+  360bl%?0=side%:bl%!1=addr%
+  370bl%?5=par%:bl%?6=comm%
+  380bl%?7=P1%:bl%?8=P2%:bl%?9=P3%
+  390bl%?10=P4%:bl%?11=P5%
+  400CALLosw%
+  410ENDPROC
+ 1080DEF PROCDISP
+ 1085CLS
+ 1090FOR I=0 TO 4096 STEP 8
+ 1100PRINT SPC(3-INT(LOG(I+1)));I;
+ 1110X$=""
+ 1120FOR J=I TO I+7
+ 1130X=data%?J:IF X<16 PRINT;" ";
+ 1140IF X>31 AND X<127 OR X>160 AND X<255 X$=X$+CHR$(X) ELSE X$=X$+"."
+ 1150PRINT;" ";~X;
+ 1160NEXT J:PRINT"  ";X$:NEXT I
+ 1170ENDPROC
+>*FX3,0
