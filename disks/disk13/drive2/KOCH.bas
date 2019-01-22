@@ -1,4 +1,3 @@
->LIST
    10 
    20 INPUT "ORDER OF CURVE :",R
    30 INC=3072/(2*SQR(3))
@@ -25,4 +24,3 @@
   240 Y=Y+INC*SIN(ANG)
   250 PLOT 5,X,Y
   260 ENDPROC
->*FX3,0
