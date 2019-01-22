@@ -49,13 +49,11 @@ Work file $.
      FRCTION             KEYB                LEXINP              LEXIS       
      LOOK                MATMULT             MEMLOOK             MSEARCH     
      READIDS             SIMULT              WORDF               WORKING     
-     plain          
 
    D.DCBELL            D.TYPE              M.DETER             M.GRAPH       
    M.SIMULT         
 26 files of 31 on 80 tracks
 >*INFO :2.*
-$.plain       FFFFFF FFFFFF 00749A 084
 $.MATMULT     FF1900 FF801F 00010F 082
 $.KEYB        FF1900 FF801F 0000E7 081
 $.ALPHATY     FF1900 FF801F 00015B 07F
