@@ -1,4 +1,4 @@
->LIST
+
    40MODE7:VDU23;8202;0;0;0;
    50max%=80
    60 osword%=&FFF1
@@ -39,4 +39,4 @@
   680REPEAT UNTIL GET=32
   690NEXT track%
   700PRINT"All IDs read"
->*FX3,0
+

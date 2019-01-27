@@ -1,4 +1,4 @@
->LIST
+
    10 CLS
    20 PRINTTAB(10,4)"DETERMINANTS"
    30 PRINTTAB(10,5)"____________"
@@ -40,4 +40,4 @@
   360 D(N%)=D(N%)+(-1)^(I%+1)*B(N%,I%,1)*S
   370 NEXT I%
   380 =D(N%)
->*FX3,0
+

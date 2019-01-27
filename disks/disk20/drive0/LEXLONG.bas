@@ -1,4 +1,4 @@
->LIST
+
    10MODE7:VDU23;8202;0;0;0;
    20DIM file$(25),title$(2),word$(3,7),wval%(3,7)
    30file$=FNmenu
@@ -142,4 +142,4 @@
  2080DATA MOD/AUX,Modal verbs and Auxilliary verbs
  2090DATA THE/0,Articles : 'The' or no article
  2100DATA PLCTIME,Prepositions of Place and Time
->*FX3,0
+

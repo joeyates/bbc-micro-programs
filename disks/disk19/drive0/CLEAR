@@ -1,7 +1,7 @@
->LIST
+
     5X=OPENUP "FILE"
    10FOR I=0 TO &FFF
    20BPUT#X,0
    30NEXT I
    40CLOSE#0
->*FX3,0
+

@@ -1,4 +1,4 @@
->LIST
+
    10 REM FORMATS BOOK FILE FOR SCREEN       AND/OR PRINTER OUTPUT
    20 DIM cond$(10),price(10)
    30 PRINT'"P FOR PRINTOUT :";:A$=GET$
@@ -47,4 +47,4 @@
   460 PRINT LEFT$(Q$,Q%):pos=0
   470 Q$=RIGHT$(Q$,L-Q%)
   480 GOTO 390
->*FX3,0
+

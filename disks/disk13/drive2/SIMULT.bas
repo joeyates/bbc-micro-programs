@@ -1,5 +1,3 @@
-*FX3,1
->LIST
    10 CLS:PRINTTAB(2,3);"This program solves sets if simultaneousequations of the form:                       Ax1+Bx2+Cx3=D"
    20 PRINT"Please give the number of equations and then the co-efficients."TAB(10,22);"Press any key :";
    30 F$=INKEY$(0):IF F$="" THEN 30
@@ -50,4 +48,3 @@
   470 FOR C=N+2 TO 2*N+1
   480 PRINT;A(C,R);" ";:NEXT C:PRINT:NEXT R
   490 END
->*FX3,0

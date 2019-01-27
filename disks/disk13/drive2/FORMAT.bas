@@ -1,4 +1,4 @@
->LIST
+
     1 MODE 1
    10 DIM C$(10),P(10)
    20 Y=OPENUP ":2.BOOKS"
@@ -39,4 +39,4 @@
  2090 PRINT LEFT$(Q$,Q%)
  2100 Q$=RIGHT$(Q$,LEN(Q$)-Q%)
  2110 GOTO 2010
->*FX3,0
+

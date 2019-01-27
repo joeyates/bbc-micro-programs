@@ -1,4 +1,4 @@
->LIST
+
    10  REM DISC EDITOR
    20 
    30 
@@ -220,4 +220,4 @@
  2190PRINT'''''"DRIVE ?";:A$=GET$:D%=VAL(A$):A$=STR$(D%)
  2200ENDPROC
  2210DEF PROCcm(A$):$blc%=A$:X%=blc% MOD256:Y%=blc%DIV256:CALL&FFF7:ENDPROC
->*FX3,0
+

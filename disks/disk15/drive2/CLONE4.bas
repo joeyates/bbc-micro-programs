@@ -1,4 +1,4 @@
->LIST
+
    10DIM data% 4097,ID% 200,bl% 20
    20X%=bl% MOD 256:Y%=bl% DIV 256
    30MODE7:A%=&7F:osw%=&FFF1:?bl%=0
@@ -43,4 +43,4 @@
   450low%=&FF:FOR I=0 TO NUM%
   460IF ID%?(I*4+2)<low% low%=ID%?(I*4+2)
   470NEXTI:ENDPROC
->*FX3,0
+

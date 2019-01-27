@@ -1,4 +1,4 @@
->LIST
+
     5INPUT"Side 0 or 2"S%
    10INPUT"FILENAME :",G$
    15F$=":"+STR$(S%)+"."+G$
@@ -36,4 +36,4 @@
   220IF E$="" THEN 240
   230D$=E$
   240=D$
->*FX3,0
+

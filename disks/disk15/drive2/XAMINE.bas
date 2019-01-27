@@ -1,4 +1,4 @@
->LIST
+
    10DIM data% 4097,bl% 20:sc%=1
    20X%=bl% MOD 256:Y%=bl% DIV 256
    30MODE7:A%=&7F:osw%=&FFF1:?bl%=0
@@ -15,4 +15,4 @@
   240NEXT I
   250sc%=(sc%+7) MOD 10
   270NEXT tr%
->*FX3,0
+

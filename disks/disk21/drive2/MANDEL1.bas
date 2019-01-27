@@ -1,4 +1,4 @@
->LIST
+
    60maxcol%=7
    70MODE2
    80S%=255
@@ -57,4 +57,4 @@
   660DEF PROCgcol(B%)
   670GCOL 0,B%
   680ENDPROC
->*FX3,0
+

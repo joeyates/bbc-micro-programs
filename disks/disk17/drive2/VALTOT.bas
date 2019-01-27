@@ -1,4 +1,4 @@
->LIST
+
     1REM ADDS UP PRICES
    10 Q=0:R=0:B=0
    20 DIM C$(10),P(10)
@@ -14,4 +14,4 @@
   120 UNTIL EOF#Y
   130 CLOSE#Y
   150 END
->*FX3,0
+

@@ -1,4 +1,4 @@
->LIST
+
    10 I=0
    20 DIM A$(90),SL(12),SR(12)
    30 X=OPENUP"CL"
@@ -36,4 +36,4 @@
   340 IF S<>0 THEN 220
   345 FOR J=1 TO N:PRINT A$(J):A=GET:NEXT J
   350 ENDPROC
->*FX3,0
+

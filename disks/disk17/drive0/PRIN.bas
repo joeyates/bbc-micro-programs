@@ -1,4 +1,4 @@
->LIST
+
    10 REM FORMATS BOOK FILE FOR SCREEN       AND/OR PRINTER OUTPUT
    12width=39:CLS
    15 PRINT"Printer output? (Y/N)";
@@ -52,4 +52,4 @@
   460 PRINT LEFT$(Q$,Q%):pos=0
   470 Q$=RIGHT$(Q$,L-Q%)
   480 GOTO 390
->*FX3,0
+

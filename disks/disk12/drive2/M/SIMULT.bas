@@ -1,4 +1,4 @@
->LIST
+
    10 REM*******************************                                           CHANGE PROG SO IT WORKS IN FRACTIONS                                            ************************************
    20 CLS:PRINTTAB(2,3);
    30 PRINT"This program solves sets if simultaneousequations of the form:Ax1+Bx2+Cx3=D"
@@ -50,4 +50,4 @@
   500 FOR C=N+2 TO 2*N+1
   510 PRINT;A(C,R);" ";:NEXT C:PRINT:NEXT R
   520 END
->*FX3,0
+

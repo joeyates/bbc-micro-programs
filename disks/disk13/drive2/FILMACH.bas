@@ -1,5 +1,5 @@
 *LOAD FILMACH
->LIST
+
    10 PROCINIT
    20 MODE 1
    30 PLOT 69,700,250
@@ -73,8 +73,8 @@
   720 A%=9:X%=(V%+2) MOD 256:Y%=(V%+2) DIV 256
   730 CALL &FFF1
   740 =?(W%+6)
->*FX3,1
->LIST
+
+
    10 PROCINIT
    20 MODE 1
    30 PLOT 69,700,250
@@ -148,4 +148,4 @@
   720 A%=9:X%=(V%+2) MOD 256:Y%=(V%+2) DIV 256
   730 CALL &FFF1
   740 =?(W%+6)
->*FX3,0
+

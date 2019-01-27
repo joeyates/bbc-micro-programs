@@ -1,4 +1,4 @@
->LIST
+
    10 MODE 1
    20 PLOT 69,700,250
    30 FOR T=0 TO 2.02*PI STEP .1
@@ -41,4 +41,4 @@
   400 A%(S%,1)=J%
   410 A%(S%,2)=K%
   420 ENDPROC
->*FX3,0
+

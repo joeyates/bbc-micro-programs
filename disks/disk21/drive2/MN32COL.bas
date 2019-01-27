@@ -1,4 +1,4 @@
->LIST
+
    60maxcol%=15
    70DIM C%(255),co%(maxcol%,1),A 30
    71FOR N%=0 TO maxcol%
@@ -53,4 +53,4 @@
   492X%=A MOD 256:Y%=A DIV 256
   493CALL &FFF7
   500END
->*FX3,0
+

@@ -1,4 +1,4 @@
->LIST
+
    10MODE 7
    20DIM A 30
    30INPUT"File :",A$

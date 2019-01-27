@@ -1,4 +1,4 @@
->LIST
+
    10INPUT"FILENAME :",G$:F$="*."+G$
    20Y%=OPENOUT F$
    30PRINT"Group 1"
@@ -16,4 +16,4 @@
   150PRINT#Y%,A$,2
   160NEXT I%
   170CLOSE#Y%
->*FX3,0
+

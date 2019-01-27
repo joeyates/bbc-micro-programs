@@ -1,4 +1,4 @@
->LIST
+
    10ON ERROR GOTO 180
    60MODE1
    70S%=255
@@ -24,4 +24,4 @@
   270x=j+i*J%:Y%=FNt(x)*I%
   280X%=J%*I%:PLOT style%,X%,Y%
   290ENDPROC
->*FX3,0
+

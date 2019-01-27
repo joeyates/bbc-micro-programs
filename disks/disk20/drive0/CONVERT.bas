@@ -1,4 +1,4 @@
->LIST
+
    10DIM W%(3,7),W$(3,7),T$(2),G$(20)
    11S$="                                        "
    15READZ$,N%,R$
@@ -37,4 +37,4 @@
   140BPUT#G%,ASC(MID$(A$,Z%,1))
   150NEXT Z%
   170ENDPROC
->*FX3,0
+

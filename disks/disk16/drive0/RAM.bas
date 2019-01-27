@@ -1,4 +1,4 @@
->LIST
+
    10REM Prog from Acorn User Apr 1987
    20REM   doesn't work
    30REM supposed to test sideways ram
@@ -199,4 +199,4 @@
  2260$P%=STRING$
  2270P%=P%+LEN STRING$
  2280=PASS
->*FX3,0
+

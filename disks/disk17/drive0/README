@@ -2,4 +2,4 @@
 The data file is BOOKS
 The printing program to use is PRIN on side 0. Read the listing and give the value for printer width (the number of characters per line, probably 66)
 The programs on side 2 are for modifying the data file in various ways.
->*FX3,0
+

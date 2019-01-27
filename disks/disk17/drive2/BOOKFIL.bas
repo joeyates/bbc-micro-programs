@@ -1,4 +1,4 @@
->LIST
+
     1MODE 1
     5 REM *** MAIN PROGRAM 12/3/85 ***
    10 DIM C$(10),P(10)
@@ -127,4 +127,4 @@
  1380 UNTIL EOF#Y
  1390 CLOSE#Y
  1400 ENDPROC
->*FX3,0
+

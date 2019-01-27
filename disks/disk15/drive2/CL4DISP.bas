@@ -1,4 +1,4 @@
->LIST
+
    10DIM data% 4097,ID% 200,bl% 20
    20X%=bl% MOD 256:Y%=bl% DIV 256
    30MODE7:A%=&7F:osw%=&FFF1:?bl%=0
@@ -28,4 +28,4 @@
  1150PRINT;" ";~X;
  1160NEXT J:PRINT"  ";X$:NEXT I
  1170ENDPROC
->*FX3,0
+

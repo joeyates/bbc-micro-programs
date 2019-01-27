@@ -1,4 +1,4 @@
->LIST
+
     5R%=0
    10*DISC
    20LOMEM=TOP+&4200
@@ -266,4 +266,4 @@
  2700]:NEXT:CALL CODE
  2710IF ?reslt =0 THEN ramsw=&FE60:ELSE ramsw=&FE32
  2720ENDPROC
->*FX3,0
+

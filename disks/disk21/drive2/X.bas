@@ -1,4 +1,4 @@
->LIST
+
     1 ON ERROR GOTO 500
    60maxcol%=15
    70DIM C%(255),co%(maxcol%,1),A 30
@@ -19,4 +19,4 @@
   480NEXT K%,J%
   490 A=GET
   500 MODE7:PRINT'':END
->*FX3,0
+

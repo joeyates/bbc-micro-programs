@@ -1,4 +1,4 @@
->LIST
+
    10 Y=OPENUP":2.F.CLASS"
    20 X=OPENOUT"CL"
    30 REPEAT
@@ -17,4 +17,4 @@
   150 PRINT#X,A$
   160 GOTO 125
   170 CLOSE#0
->*FX3,0
+

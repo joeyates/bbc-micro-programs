@@ -1,4 +1,4 @@
->LIST
+
    60INPUT"FILE :"A$
    70file=OPENOUT A$
    80INPUT"x,y :"j,k
@@ -24,4 +24,4 @@
   280CLOSE#file
   290PRINT"fini"
   300END
->*FX3,0
+
