@@ -1,0 +1,132 @@
+#!/usr/bin/env ruby
+
+ROOT = File.dirname(__dir__)
+
+raise "Supply an action" if ARGV.size == 0
+raise "Supply a path" if ARGV.size < 2
+
+action = ARGV[0]
+path = File.expand_path(ARGV[1], ROOT)
+
+def each_info(path)
+  glob = File.join(path, "**", "info")
+  Dir.glob(glob) do |info|
+    yield info
+  end
+end
+
+class InfoFile
+  def self.parse(path, line)
+    dir = line[0..0]
+    file = line[2..8].strip
+    attribs = line[10..12]
+    hex_load = line[14..19]
+    hex_run = line[21..26]
+    hex_size = line[28..33]
+    hex_sector = line[35..37]
+    pathname = File.join(path, file)
+    new(
+      pathname: pathname,
+      dir: dir,
+      attribs: attribs,
+      load: hex_load.to_i(16),
+      run: hex_run.to_i(16),
+      size: hex_size.to_i(16),
+      sector: hex_sector.to_i(16)
+    )
+  end
+
+  attr_reader :pathname
+  attr_reader :dir
+  attr_reader :attribs
+  attr_reader :load
+  attr_reader :run
+  attr_reader :size
+  attr_reader :sector
+
+  def initialize(
+    pathname:, dir:, attribs:, load:, run:, size:, sector:
+  )
+    @pathname = pathname
+    @dir = dir
+    @attribs = attribs
+    @load = load
+    @run = run
+    @size = size
+    @sector = sector
+  end
+
+  def to_s
+    "<#{self.class} #{ivvs}>"
+  end
+
+  def file
+    File.basename(pathname)
+  end
+
+  def inf_pathname
+    pathname + ".inf"
+  end
+
+  def is_basic?
+    load == 0xFF1900 && run == 0xFF801F
+  end
+
+  def binary_exists?
+    File.exist?(pathname)
+  end
+
+  def inf_exists?
+    File.exist?(inf_pathname)
+  end
+
+  def create_inf
+    inf = "%- 7s %6X %6X %08X\n" % [file, load, run, size]
+    File.write(inf_pathname, inf)
+  end
+
+  private def ivvs
+    instance_variables.reduce({}) { |a, e| a[e] = instance_variable_get(e); a }
+  end
+end
+
+def each_info_file(info)
+  path = File.dirname(info)
+  data = File.read(info)
+  data.each_line do |line|
+    next if line.length != 39
+    info_file = InfoFile.parse(path, line)
+    yield info_file
+  end
+end
+
+def each_basic_info_file(info)
+  path = File.dirname(info)
+  data = File.read(info)
+  data.each_line do |line|
+    next if line.length != 39
+    info_file = InfoFile.parse(path, line)
+    next if !info_file.is_basic?
+    yield info_file
+  end
+end
+
+case action
+when "missing"
+  each_info(path) do |info|
+    each_basic_info_file(info) do |info_file|
+      next if info_file.binary_exists?
+      puts "Missing #{info_file.pathname}"
+    end
+  end
+when "inf"
+  each_info(path) do |info|
+    each_basic_info_file(info) do |info_file|
+      next if !info_file.binary_exists?
+      next if info_file.inf_exists?
+      info_file.create_inf
+    end
+  end
+else
+  raise "Unknown action '#{action}'"
+end
