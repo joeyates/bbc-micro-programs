@@ -26,3 +26,5 @@ File.readlines(input).each.with_index do |line, i|
 end
 
 File.write(output, bytes)
+
+puts "#{input} -> #{output} (#{bytes.length.to_s(16)} hex bytes)"

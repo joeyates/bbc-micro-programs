@@ -16,6 +16,5 @@ Dir.glob(glob) do |input|
     $stderr.puts "Skipping '#{input}' as '#{output}' exists"
     next
   end
-  puts "Converting '#{input}' -> '#{output}'"
-  `bin/dump-to-bin '#{input}' '#{output}'`
+  puts `bin/dump-to-bin '#{input}' '#{output}'`
 end
