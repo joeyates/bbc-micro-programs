@@ -1,0 +1,15 @@
+^LScreentest
+ (34)
+Drive 0             Option 2 (RUN^@)
+Directory :0.$      Library :0.$
+Work file $.       
+
+     !BOOT    L          CHOICE   L          CONTROL             GO       L  
+     LOGO     L          MCODE    L          PART1    L          PART2    L  
+     REVERT   L          SCORE               TEST1    L          TEST10   L  
+     TEST11   L          TEST12   L          TEST13   L          TEST14   L  
+     TEST15   L          TEST16   L          TEST17   L          TEST18   L  
+     TEST19   L          TEST2    L          TEST20   L          TEST3    L  
+     TEST4    L          TEST5    L          TEST6    L          TEST7    L  
+     TEST8    L          TEST9    L     
+30 files of 31 on 80 tracks
