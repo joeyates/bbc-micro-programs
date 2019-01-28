@@ -1,4 +1,3 @@
-
    10MODE7:VDU23;8202;0;0;0;
    20DIM F$(25),T$(2),W$(3,8),W%(3,8)
    30F$=FNmenu
@@ -140,4 +139,3 @@
  2080DATA MOD/AUX,Modal verbs and Auxilliary verbs
  2090DATA THE/0,Articles : 'The' or no article
  2100DATA PLCTIME,Prepositions of Place and Time
-
