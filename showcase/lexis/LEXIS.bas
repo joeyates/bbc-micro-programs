@@ -199,9 +199,9 @@
  1990 IF R% < 1 OR R% > M% GOTO 1930
  2000 =R%
  2010 DATA 6
- 2020 DATA Grammar,12,3000
+ 2020 DATA Grammar,11,3000
  2030 DATA Consonants,9,4000
- 2040 DATA Vowels,10,5000
+ 2040 DATA Vowels,11,5000
  2050 DATA Vocabulary,16,6000
  2060 DATA Vocabulary II,6,7000
  2070 DATA Spelling,2,8000
@@ -209,7 +209,6 @@
  3010 DATA G.PAST-PP,Past Tenses and Past Participles
  3020 DATA G.GER-INF,Verbs with Gerund and Infinitive
  3030 DATA G.IRREGPL,Irregular plurals
- 3040 DATA G.WEAKFMS,Weak Forms
  3050 DATA G.MAKE-DO,Make words and Do words
  3060 DATA G.PRONPOS,Pronouns and Possessive Pronouns
  3070 DATA G.MOD-AUX,Modal verbs and Auxilliary verbs
@@ -226,7 +225,8 @@
  4060 DATA C.RPRON,Pronunciation of 'r'
  4070 DATA C.SEFINAL,Final 'se'
  4080 DATA C.SMEDIAL,Medial 's'
- 5000 DATA V.A-OUGH,'-augh' and '-ough'
+ 5000 DATA V.WEAKFMS,Weak Forms
+ 5005 DATA V.A-OUGH,'-augh' and '-ough'
  5010 DATA V.ART-CAT,'ar' and short 'a'
  5020 DATA V.GO-NEW,Long 'o' and 'oo'
  5030 DATA V.GO-SAW,Long 'o' and 'aw'
