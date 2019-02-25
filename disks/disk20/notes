@@ -4,7 +4,7 @@
 
 !BOOT
 CONVERT
-FILECOR
+FILECOR - Correct existing Lexis files
 LEXIS - Initial menu (Screenshot)
 LEXLONG - Jumps stright in to Grammar (?)
 Vocab - data file
